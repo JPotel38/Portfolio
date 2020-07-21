@@ -14,7 +14,7 @@ function Nav() {
       breakpoint="lg"
       collapsedWidth="0"
     >
-      <Menu theme="dark" mode="inline" style={{ paddingTop: 70, width: 220, height: 750 }}>
+      <Menu theme="dark" mode="inline" style={{ paddingTop: 70, width: 220, height: 680 }}>
         <Menu.Item key="0" style={{ height: "50px", marginBottom: 110 }} icon={<HomeOutlined style={{ fontSize: '50px' }} />}>
           <Link to='/' />
         </Menu.Item>
