@@ -24,6 +24,7 @@
     "react-slick": "^0.26.1",
     "slick-carousel": "^1.8.1"
   },
+  "start": "webpack-dev-server --inline --content-base . --history-api-fallback",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
