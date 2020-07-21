@@ -65,7 +65,7 @@ return (
         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
     <Row><Col span={24}><Title> Education </Title></Col> </Row>
   <Row>
-    <Col span={12}>
+
    
   <Timeline mode={"left"}>
     <Timeline.Item label="2020"><Text >Bootcamp Javascript Full stack à La Caspule</Text><Button style={{marginLeft:5}} onClick={() => {capsule()}}><SearchOutlined /></Button></Timeline.Item>
@@ -75,7 +75,7 @@ return (
     <Timeline.Item label="2012" ><Text >Licence Histoire</Text></Timeline.Item>
     <Timeline.Item label="2008" ><Text  >Bac Economique et Social</Text></Timeline.Item>
   </Timeline>
-  </Col>
+
   <Col>
 {details}
   </Col>

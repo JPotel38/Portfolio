@@ -50,10 +50,12 @@ function Home() {
                 </Col>
               </Row>
               <Row>
-                <Col span={5} offset={8}>
+                <Col span={16} offset={8}>
                   <Button className="button" shape="round"><a href="mailto:potel.jeremy@gmail.com"><MailOutlined style={{ fontSize: 30 }} />Me contacter</a></Button>
                 </Col>
-                <Col span={3} offset={2}>
+                </Row>
+                <Row>
+                <Col span={16} offset={8}>
                   <Button className="button" href="../CV.pdf" target="_blank" shape="round" style={{ fontSize: 30 }}> <FilePdfOutlined style={{ color: "red", fontSize: 30 }} />CV</Button>
                 </Col>
               </Row>
@@ -61,7 +63,7 @@ function Home() {
             </div>
             <Divider />
             <Row>
-              <Col span={2} offset={3}>
+              <Col span={2} offset={1}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faHtml5}
@@ -81,7 +83,7 @@ function Home() {
                 </Fade>
               </Col>
 
-              <Col span={2} offset={1}>
+              <Col span={2} offset={2}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faCss3Alt}
@@ -99,7 +101,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={1}>
+              <Col span={2} offset={2}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faJs}
@@ -117,7 +119,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={1}>
+              <Col span={2} offset={2}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faBootstrap}
@@ -135,7 +137,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={1}>
+              <Col span={2} offset={2}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faNodeJs}
@@ -153,7 +155,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={1}>
+              <Col span={2} offset={2}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faReact}
