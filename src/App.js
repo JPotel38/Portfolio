@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-
+import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom'
+  
 import Home from './screens/Home'
 import Education from './screens/Education'
 import Pro from './screens/Pro'
@@ -14,27 +14,27 @@ import Blackboard from './screens/Blackboard'
 import Mymoviz from './screens/Mymoviz'
 import Weatherapp from './screens/Weatherapp'
 import Bikeshop from './screens/Bikeshop'
+import NotFound from './screens/NotFound'
 
-function App() {
+export default function App() {
   return (
 
       <Router>
         <Switch>
-          <Route component={Home} path="/" exact />
-          <Route component={Education} path="/education"/>
-          <Route component={Pro} path="/pro"/>
-          <Route component={Perso} path="/perso"/>
-          <Route component={Projets} path="/projets" />
-          <Route component={Masques} path="/masques" />
-          <Route component={Morningnews} path="/morningnews" />
-          <Route component={Ticketac} path="/ticketac" />
-          <Route component={Blackboard} path="/blackboard" />
-          <Route component={Mymoviz} path="/mymoviz" />
-          <Route component={Weatherapp} path="/weatherapp" />
-          <Route component={Bikeshop} path="/bikeshop" />
+          <Route path="/" exact component={Home}  />
+          <Route path="/education" component={Education} />
+          <Route path="/pro" component={Pro} />
+          <Route path="/perso" component={Perso} />
+          <Route path="/projets" component={Projets}  />
+          <Route path="/masques" component={Masques}  />
+          <Route path="/morningnews" component={Morningnews}  />
+          <Route path="/ticketac" component={Ticketac}  />
+          <Route path="/blackboard" component={Blackboard}  />
+          <Route path="/mymoviz" component={Mymoviz}  />
+          <Route path="/weatherapp" component={Weatherapp}  />
+          <Route path="/bikeshop" component={Bikeshop}  />
+          <Route path="*" component={NotFound}  />
         </Switch>
       </Router>
   );
 }
-
-export default App;

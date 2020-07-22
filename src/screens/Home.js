@@ -17,14 +17,10 @@ function Home() {
   return (
     <Layout style={{ height: "100vh" }}>
       <Nav />
-
       <Layout style={{ heigth: "auto" }}>
-
         <Content style={{ margin: '24px 16px 0' }}>
-
           <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
             <div id="about-header" >
-
               <Row>
                 <Col span={20}>
                   <Title> Jérémy Potel - Développeur web Fullstack junior</Title>
