@@ -23,7 +23,7 @@ function Projet(props) {
         <Content style={{ margin: '24px 16px 0' }}>
           <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
             <Row>
-              <Col spn={24}>
+              <Col span={24}>
                 <Title>Projets</Title>
                 <Title level={2}> Cliquez sur un projet pour en savoir plus </Title>
                 <Title level={4}> Vous pourrez retrouver l'ensemble des projets sur GitHub</Title>

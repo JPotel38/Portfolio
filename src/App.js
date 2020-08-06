@@ -7,6 +7,7 @@ import Education from './screens/Education'
 import Pro from './screens/Pro'
 import Perso from './screens/Perso'
 import Projets from './screens/Projets'
+import GameZone from './screens/GameZone'
 import Masques from './screens/Masques'
 import Morningnews from './screens/Morningnews'
 import Ticketac from './screens/Ticketac'
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/pro" component={Pro} />
           <Route path="/perso" component={Perso} />
           <Route path="/projets" component={Projets}  />
+          <Route path="/game" component={GameZone}  />
           <Route path="/masques" component={Masques}  />
           <Route path="/morningnews" component={Morningnews}  />
           <Route path="/ticketac" component={Ticketac}  />
