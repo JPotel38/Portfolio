@@ -13,6 +13,8 @@ window.onload = function () {
     var score;
     var timeOut;
     var record; 
+
+
     
     init()
 

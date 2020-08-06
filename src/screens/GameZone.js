@@ -19,7 +19,8 @@ function Game() {
           <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
             <Row>
               <Col span={24}>
-                <Title>Jeux</Title>
+                <Title>Game Zone</Title>
+                <Title level={3}>Plus de surprises à venir...</Title>
               </Col>
             </Row>
             <Row >
