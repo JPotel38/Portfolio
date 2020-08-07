@@ -34,7 +34,7 @@ function Nav() {
         <Menu.Item key="5" icon={<ThunderboltOutlined style={{ fontSize: 25 }} />} style={{ height: 75, fontSize: 20 }}  >
           <Link to='/game'>Game Zone</Link>
         </Menu.Item>
-        <Menu.Item key="6" style={{marginTop: 120, height: 75}}>
+        <Menu.Item key="6" style={{marginTop: 50, height: 75}}>
         <a href="https://github.com/JPotel38" target="_blank" rel="noopener noreferrer"><GithubFilled style={{ color: '#92D050', fontSize: 60, marginRight: 20 }} /></a>
         <a href="https://www.linkedin.com/in/jérémy-potel/" target="_blank" rel="noopener noreferrer"><LinkedinFilled style={{ color: 'blue', fontSize: 60 }} /></a>
         </Menu.Item>

@@ -7,8 +7,8 @@
 }
 
 .ant-typography{
- color : white !important;
- font-size:16px;
+  color : white !important;
+  font-size:16px;
 }
 .ant-typography ul li{
   font-size: 16px;
@@ -23,12 +23,12 @@
   font-size:16px;
 }
  .ant-timeline-item-label{
-  color: white;
+    color: white;
 
  }
  .ant-tabs-tab{
-color : white;
-font-size:40px;
+    color : white;
+    font-size:40px;
  }
 
 .ant-carousel .slick-slide {
@@ -44,9 +44,9 @@ font-size:40px;
   }
 
   .ant-divider{
-background-color : #5DADE2 !important;
-
+    background-color : #5DADE2 !important;
   }
+
   .button {
     text-align: center;
     height: 50px;
@@ -60,7 +60,7 @@ background-color : #5DADE2 !important;
     line-height: 30px;
 }
   .ant-tabs-nav {
-margin-bottom: 64px !important;
+    margin-bottom: 64px !important;
   }
 
   #particles {
@@ -69,5 +69,4 @@ margin-bottom: 64px !important;
     min-height: 100% !important;
     background: #343A3F;
     margin: 0 !important
-  
   }

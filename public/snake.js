@@ -1,37 +1,37 @@
 window.onload = function () {
 
-    var canvas;
-    var canvasWidth = 900;
-    var canvasHeight = 600;
     var blockSize = 30;
     var ctx;
     var delay = 100;
     var snakee;
     var applee;
+    var canvasWidth = 950;
+    var canvasHeight = 580;
     var widthInBlocks = canvasWidth / blockSize;
     var heightInBlocks = canvasHeight / blockSize;
     var score;
     var timeOut;
-    var record; 
-
-
     
     init()
 
     function init() {
-        canvas = document.createElement('canvas');
-        canvas.width = canvasWidth;
-        canvas.height = canvasHeight;
+        var canvas = document.getElementById("myCanvas");
+        ctx = canvas.getContext("2d");
         canvas.style.border = "30px solid gray";
         canvas.style.margin = "10px auto";
-        canvas.style.display = "block"
-        canvas.style.backgroundColor = "#ddd"
-        document.body.appendChild(canvas)
-        ctx = canvas.getContext("2d");
+        canvas.style.display = "block";
+        canvas.style.backgroundColor = "lightgray";
         snakee = new Snake([[6, 4], [5, 4], [4, 4]], "right")
         applee = new Apple([10, 10]);
         score = 0;
-        document.getElementById("score").textContent = "Record = " + localStorage.getItem("score")
+        if(localStorage.getItem("score") == null ){
+            document.getElementById("score").textContent = "Record = " + 0
+
+        } else {
+            document.getElementById("score").textContent = "Record = " + localStorage.getItem("score")
+
+        }
+
         refreshCanvas()
 
     }
@@ -60,8 +60,6 @@ window.onload = function () {
             applee.draw();
             timeOut = setTimeout(refreshCanvas, delay);
         }
-
-
     }
     function gameOver() {
         ctx.save();
