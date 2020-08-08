@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Layout, Divider, Row, Col, Button, Typography, Progress } from 'antd';
 import { FilePdfOutlined, MailOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +12,25 @@ import Nav from './Sider'
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
+
 function Home() {
+
+const [html, setHtml] = useState(0);
+const [css, setCss] = useState(0);
+const [js, setJs] = useState(0);
+const [boot, setBoot] = useState(0);
+const [node, setNode] = useState(0);
+const [react, setReact] = useState(0);
+
+useEffect(() =>{
+    
+    const interval = setInterval(() => {
+      setHtml(html => html + 5);
+    }, 200);
+      setTimeout(function( ) { clearInterval( interval ); }, 2800);
+ 
+}, []);
+console.log(html)
 
   return (
     <Layout style={{ height: "100vh" }}>
@@ -41,7 +59,8 @@ function Home() {
                   <Text><p>Gravitant dans l'univers du code depuis 2019 à travers l'apprentissage du COBOL,
                   je viens d'achever une formation intensive Javascript fullstack à <a href="https://www.lacapsule.academy/fr/">La Capsule Academy</a> pour enrichir mes compétences sur ce language qui me passionne. La Capsule propose un apprentissage à travers la réalisation de projets seuls ou en groupe.</p>
                     <p>Souhaitant continuer dans l'univers du Javascript, je suis à la recherche d'un stage ou d'un emploi en tant que Développeur full stack junior afin de gagner en autonomie.</p>
-                  Je parle couramment anglais et je possède un niveau conversationnel en espagnol.
+                  <p>Je parle couramment anglais et je possède un niveau conversationnel en espagnol.</p>
+                  Ce site a été réalisé avec React et la librairie graphique Ant Design.
                   </Text>
                 </Col>
               </Row>
@@ -59,13 +78,14 @@ function Home() {
             </div>
             <Divider />
             <Row>
-              <Col span={2} offset={1}>
+              <Col span={3}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faHtml5}
                     size="8x"
                     color="#EA5F25"
                     title="HTML"
+                    marginLeft="5px"
                   />
 
                   <Progress
@@ -74,12 +94,12 @@ function Home() {
                       '0%': '#108ee9',
                       '100%': '#EA5F25',
                     }}
-                    percent={70}
+                    percent={html}
                   />
                 </Fade>
               </Col>
 
-              <Col span={2} offset={2}>
+              <Col span={3} offset={1}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faCss3Alt}
@@ -97,7 +117,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={2}>
+              <Col span={3} offset={1}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faJs}
@@ -115,7 +135,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={2}>
+              <Col span={3} offset={1}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faBootstrap}
@@ -133,7 +153,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={2}>
+              <Col span={3} offset={1}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faNodeJs}
@@ -151,7 +171,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-              <Col span={2} offset={2}>
+              <Col span={3} offset={1}>
                 <Fade bottom>
                   <FontAwesomeIcon
                     icon={faReact}
@@ -169,10 +189,7 @@ function Home() {
                   />
                 </Fade>
               </Col>
-
             </Row>
-
-
           </div>
         </Content>
       </Layout>

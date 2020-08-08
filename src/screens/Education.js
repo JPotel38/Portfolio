@@ -15,7 +15,7 @@ function Education(props) {
       <p>Les technologies vues sont :</p>
       <Row>
         
-        <Col span={6}>
+        <Col span={8}>
           <Title level={4}>En Front :</Title>
         <ul>
           <li>HTML</li>
@@ -25,7 +25,7 @@ function Education(props) {
           <li>React Native via Expo</li>
         </ul>
         </Col>
-        <Col span={6}>
+        <Col span={8}>
         <Title level={4}>En Back :</Title>
         <ul>
         <li>Javascript</li>
@@ -33,7 +33,7 @@ function Education(props) {
           <li>Express</li>
         </ul>
         </Col>
-        <Col span={6}>
+        <Col span={8}>
         <Title level={4}>Design et responsive :</Title>
         <ul>
         <li>Bootstrap</li>

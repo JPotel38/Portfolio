@@ -6,7 +6,7 @@ window.onload = function () {
     var snakee;
     var applee;
     var canvasWidth = 950;
-    var canvasHeight = 580;
+    var canvasHeight = 500;
     var widthInBlocks = canvasWidth / blockSize;
     var heightInBlocks = canvasHeight / blockSize;
     var score;

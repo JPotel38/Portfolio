@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Card, Row, Typography, Col, Button } from 'antd';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { AppleOutlined } from '@ant-design/icons';
 import Sider from './Sider'
 
 
@@ -25,7 +25,7 @@ function Game() {
             </Row>
             <Row >
               <Col span={12}>
-                <Button className="button" shape="round" target="_blank"><a href="../snake.html">Snake</a></Button>
+                <Button className="button" shape="round" target="_blank" style={{ marginTop: 30, fontSize: 30 }}><a href="../snake.html"><AppleOutlined style={{ color: "red", fontSize: 30 }} />  Snake</a></Button>
               </Col>
             </Row>
           </div>
