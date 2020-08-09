@@ -24,36 +24,36 @@ const [react, setReact] = useState(0);
 
 useEffect(() =>{
 if(html < 70){
-  setTimeout(function(){ setHtml(prevHtml => prevHtml + 1); }, 100);
+  setTimeout(function(){ setHtml(prevHtml => prevHtml + 1); }, 10);
 };
 }, [html]);
 
 useEffect(() =>{
   if(css < 65){
-    setTimeout(function(){ setCss(prevCss => prevCss + 1); }, 100);
+    setTimeout(function(){ setCss(prevCss => prevCss + 1); }, 10);
   };
   }, [css]);
 
 useEffect(() =>{
   if(js < 60){
-    setTimeout(function(){ setJs(prevJs => prevJs + 1); }, 100);
+    setTimeout(function(){ setJs(prevJs => prevJs + 1); }, 10);
   };
 }, [js]);
 useEffect(() =>{
   if(boot < 70){
-    setTimeout(function(){ setBoot(prevBoot => prevBoot + 1); }, 100);
+    setTimeout(function(){ setBoot(prevBoot => prevBoot + 1); }, 10);
   };
 }, [boot]);
 
 useEffect(() =>{
   if(node < 55){
-    setTimeout(function(){ setNode(prevNode => prevNode + 1); }, 100);
+    setTimeout(function(){ setNode(prevNode => prevNode + 1); }, 10);
   };
 }, [node]);
 
 useEffect(() =>{
   if(react < 65){
-    setTimeout(function(){ setReact(prevReact => prevReact + 1); }, 100);
+    setTimeout(function(){ setReact(prevReact => prevReact + 1); }, 10);
   };
 }, [react]);
 
@@ -95,7 +95,7 @@ console.log("La valeur de html est " + html)
               </Row>
               <Row>
                 <Col span={16} offset={8}>
-                  <Button className="button" shape="round"><a href="mailto:potel.jeremy@gmail.com"><MailOutlined style={{ fontSize: 30 }} />Me contacter</a></Button>
+                  <Button className="button" shape="round"><a href="mailto:potel.jeremy@gmail.com"><MailOutlined style={{ fontSize: 30 }} />  Me contacter</a></Button>
                 </Col>
                 </Row>
                 <Row>
