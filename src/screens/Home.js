@@ -23,14 +23,43 @@ const [node, setNode] = useState(0);
 const [react, setReact] = useState(0);
 
 useEffect(() =>{
-    
-    const interval = setInterval(() => {
-      setHtml(html => html + 5);
-    }, 200);
-      setTimeout(function( ) { clearInterval( interval ); }, 2800);
- 
-}, []);
-console.log(html)
+if(html < 70){
+  setTimeout(function(){ setHtml(prevHtml => prevHtml + 1); }, 100);
+};
+}, [html]);
+
+useEffect(() =>{
+  if(css < 65){
+    setTimeout(function(){ setCss(prevCss => prevCss + 1); }, 100);
+  };
+  }, [css]);
+
+useEffect(() =>{
+  if(js < 60){
+    setTimeout(function(){ setJs(prevJs => prevJs + 1); }, 100);
+  };
+}, [js]);
+useEffect(() =>{
+  if(boot < 70){
+    setTimeout(function(){ setBoot(prevBoot => prevBoot + 1); }, 100);
+  };
+}, [boot]);
+
+useEffect(() =>{
+  if(node < 55){
+    setTimeout(function(){ setNode(prevNode => prevNode + 1); }, 100);
+  };
+}, [node]);
+
+useEffect(() =>{
+  if(react < 65){
+    setTimeout(function(){ setReact(prevReact => prevReact + 1); }, 100);
+  };
+}, [react]);
+
+
+
+console.log("La valeur de html est " + html)
 
   return (
     <Layout style={{ height: "100vh" }}>
@@ -78,14 +107,12 @@ console.log(html)
             </div>
             <Divider />
             <Row>
-              <Col span={3}>
-                <Fade bottom>
+            <Col xs={10} sm={6} md={3}>
                   <FontAwesomeIcon
                     icon={faHtml5}
                     size="8x"
                     color="#EA5F25"
                     title="HTML"
-                    marginLeft="5px"
                   />
 
                   <Progress
@@ -96,11 +123,10 @@ console.log(html)
                     }}
                     percent={html}
                   />
-                </Fade>
               </Col>
 
-              <Col span={3} offset={1}>
-                <Fade bottom>
+              <Col xs={10} sm={6} md={3} offset={1}>
+  
                   <FontAwesomeIcon
                     icon={faCss3Alt}
                     size="8x"
@@ -113,12 +139,12 @@ console.log(html)
                       '0%': '#108ee9',
                       '100%': '#016EB6',
                     }}
-                    percent={65}
+                    percent={css}
                   />
-                </Fade>
+
               </Col>
-              <Col span={3} offset={1}>
-                <Fade bottom>
+              <Col xs={10} sm={6} md={3} offset={1}>
+       
                   <FontAwesomeIcon
                     icon={faJs}
                     size="8x"
@@ -131,12 +157,12 @@ console.log(html)
                       '0%': '#108ee9',
                       '100%': '#ebe834',
                     }}
-                    percent={60}
+                    percent={js}
                   />
-                </Fade>
+       
               </Col>
-              <Col span={3} offset={1}>
-                <Fade bottom>
+              <Col xs={10} sm={6} md={3} offset={1}>
+            
                   <FontAwesomeIcon
                     icon={faBootstrap}
                     size="8x"
@@ -149,12 +175,12 @@ console.log(html)
                       '0%': '#108ee9',
                       '100%': '#563D7C',
                     }}
-                    percent={70}
+                    percent={boot}
                   />
-                </Fade>
+     
               </Col>
-              <Col span={3} offset={1}>
-                <Fade bottom>
+              <Col xs={10} sm={6} md={3} offset={1}>
+            
                   <FontAwesomeIcon
                     icon={faNodeJs}
                     size="8x"
@@ -167,12 +193,12 @@ console.log(html)
                       '0%': '#108ee9',
                       '100%': '#90C53F',
                     }}
-                    percent={50}
+                    percent={node}
                   />
-                </Fade>
+              
               </Col>
-              <Col span={3} offset={1}>
-                <Fade bottom>
+              <Col xs={10} sm={6} md={3} offset={1}>
+            
                   <FontAwesomeIcon
                     icon={faReact}
                     size="8x"
@@ -185,9 +211,9 @@ console.log(html)
                       '0%': '#108ee9',
                       '100%': '#61DBFB',
                     }}
-                    percent={65}
+                    percent={react}
                   />
-                </Fade>
+               
               </Col>
             </Row>
           </div>
