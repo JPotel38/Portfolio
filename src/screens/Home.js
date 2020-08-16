@@ -3,7 +3,6 @@ import { Layout, Divider, Row, Col, Button, Typography, Progress } from 'antd';
 import { FilePdfOutlined, MailOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faHtml5, faCss3Alt, faBootstrap, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
-import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import '../App.css';
 import Nav from './Sider'
@@ -56,10 +55,6 @@ useEffect(() =>{
     setTimeout(function(){ setReact(prevReact => prevReact + 1); }, 10);
   };
 }, [react]);
-
-
-
-console.log("La valeur de html est " + html)
 
   return (
     <Layout style={{ height: "100vh" }}>

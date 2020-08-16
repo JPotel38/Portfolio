@@ -1,13 +1,13 @@
 import React from 'react'
 import { Layout, Row, Typography, Col } from 'antd';
-import Sider from './Sider'
+import Nav from './Sider'
 import Slider from "react-slick";
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
 
 
-function Perso(props) {
+function Perso() {
 
   const settings = {
     dots: true,
@@ -20,7 +20,7 @@ function Perso(props) {
 
   return (
     <Layout style={{ height: "100vh" }}>
-      <Sider />
+      <Nav />
       <Layout style={{ heigth: "auto" }}>
         <Content style={{ margin: '24px 16px 0' }}>
           <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
@@ -33,7 +33,7 @@ function Perso(props) {
               <div data-index="1">
                 <Title level={2}>KultureMania</Title>
                 <Row>
-                <Col xs={0} sm={0} md={8} lg={10} xl={12}>
+                <Col xs={0} sm={0} md={0} lg={10} xl={12}>
                     <img alt="KultureMania" src="../KultureMania.jpg" width="100%" height="350" />
                   </Col>
                   <Col xs={24} sm={24} md={8} lg={10} xl={11} offset={1}>
@@ -44,10 +44,10 @@ function Perso(props) {
               <div>
                 <Title level={2}>Futuréel Festival</Title>
                 <Row>
-                <Col xs={0} sm={0} md={8} lg={10} xl={11}>
+                <Col xs={0} sm={0} md={0} lg={10} xl={11}>
                     <img alt="Futuréel" src="../Futuréel.jpg" width="100%" height="350" />
                   </Col>
-                  <Col xs={24} sm={24} md={8} lg={10} xl={11} offset={1}>
+                  <Col xs={24} sm={24} md={0} lg={10} xl={11} offset={1}>
                     <Text> Le Futuréel Festival est un festival de musique que nous avons réalisé en juillet 2017. Etant alors un des cofondateurs, j'ai pris en charge la communication, l'administratif, le lien avec les artistes et la gestion lors de l'événement.</Text>
                   </Col>
                 </Row>
@@ -55,7 +55,7 @@ function Perso(props) {
               <div>
                 <Title level={2}>Service civique à l'AFEV</Title>
                 <Row>
-                <Col xs={0} sm={0} md={8} lg={10} xl={12}>
+                <Col xs={0} sm={0} md={0} lg={10} xl={12}>
                     <img alt="AFEV" src="../Afev.jpg" width="100%" height="350" />
                   </Col>
                   <Col xs={24} sm={24} md={8} lg={10} xl={11} offset={1}>
@@ -66,10 +66,10 @@ function Perso(props) {
               <div>
                 <Title level={2}>Permis Vacances Travail en Nouvelle-Zélande</Title>
                 <Row>
-                <Col xs={0} sm={0} md={8} lg={10} xl={12}>
+                <Col xs={0} sm={0} md={0} lg={10} xl={12}>
                     <img alt="NZ" src="../NZ.jpg" width="100%" height="350" />
                   </Col>
-                  <Col xs={24} sm={24} md={8} lg={10} xl={11} offset={1}>
+                  <Col xs={24} sm={24} md={0} lg={10} xl={11} offset={1}>
                     <Text>En 2014-2015, j'ai effectué un année de césure en Nouvelle-Zélande dans le cadre du permis Vacances-Travail. Cette expérience a participé à mon ouverture d'esprit et à une plus grande maturité. J'ai profité de ce séjour pour renforcer mon anglais, une langue que je pratique toujours au quotidien.</Text>
                   </Col>
                 </Row>

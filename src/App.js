@@ -16,6 +16,7 @@ import Mymoviz from './screens/Mymoviz'
 import Weatherapp from './screens/Weatherapp'
 import Bikeshop from './screens/Bikeshop'
 import NotFound from './screens/NotFound'
+import Pendu from './screens/Pendu'
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/mymoviz" component={Mymoviz}  />
           <Route path="/weatherapp" component={Weatherapp}  />
           <Route path="/bikeshop" component={Bikeshop}  />
+          <Route path="/pendu" component={Pendu}  />
           <Route path="*" component={NotFound}  />
         </Switch>
       </Router>

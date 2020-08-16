@@ -1,7 +1,8 @@
 import React from 'react'
-import { Layout, Card, Row, Typography, Col, Button } from 'antd';
-import { AppleOutlined } from '@ant-design/icons';
-import Sider from './Sider'
+import { Layout, Row, Typography, Col, Button } from 'antd';
+import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom';
+import { AppleOutlined, FrownOutlined} from '@ant-design/icons';
+import Nav from './Sider';
 
 
 
@@ -13,7 +14,7 @@ function Game() {
 
   return (
     <Layout style={{ height: "100vh" }}>
-      <Sider />
+      <Nav />
       <Layout style={{ heigth: "auto" }}>
         <Content style={{ margin: '24px 16px 0' }}>
           <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
@@ -25,7 +26,10 @@ function Game() {
             </Row>
             <Row >
               <Col span={12}>
-                <Button className="button" shape="round" target="_blank" style={{ marginTop: 30, fontSize: 30 }}><a href="../snake.html"><AppleOutlined style={{ color: "red", fontSize: 30 }} />  Snake</a></Button>
+                <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><a href="../snake.html"><AppleOutlined style={{ color: "red", fontSize: 30 }} />  Snake</a></Button>
+              </Col>
+              <Col span={12}>
+                <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><Link to="/pendu"><FrownOutlined style={{ color: "yellow", fontSize: 30 }} />  Pendu</Link></Button>
               </Col>
             </Row>
           </div>
