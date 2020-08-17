@@ -57,24 +57,29 @@ function Pendu() {
   }
 
   function validLetter() {
-    setTabLetters([...tabLetters, letter + ' ']);
-    var index = word.indexOf(letter)
-    if (index !== -1) {
-      hidden.splice(index, 1, letter);
-      setAddLetter(addLetter + 1);
-    } else {
-      setPoints(points - 1);
-      setAddLetter(addLetter + 1);
+    if(letter !== ''){
+      setTabLetters([...tabLetters, letter + ' ']);
+      for(var i = 0; i < word.length; i++){
+        if (word[i].indexOf(letter) == 0) {
+          hidden.splice(i, 1, letter);
+          setAddLetter(addLetter + 1);
+        }}
+        if(word.indexOf(letter) == -1){
+          setPoints(points - 1);
+          setAddLetter(addLetter + 1)
+        }
+        setLetter('');
+      }
     }
-    setLetter('')
-  }
+    
 
   function again() {
     setValid(false);
     setFinish(false);
     setHidden('');
     setWord('');
-    setTabLetters([])
+    setTabLetters([]);
+    setPoints(10);
   }
 
   if (valid == true) {
@@ -101,7 +106,7 @@ function Pendu() {
                 </Col>
               </Row>
               <Row>
-                <Col span={8} offset={8}>
+                <Col span={16} offset={8}>
                   <p style={{ fontSize: 30 }}>Lettres utilisées : {tabLetters}</p>
                 </Col>
               </Row>

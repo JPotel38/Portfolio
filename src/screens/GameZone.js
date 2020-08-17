@@ -25,11 +25,11 @@ function Game() {
               </Col>
             </Row>
             <Row >
-              <Col span={11}>
+              <Col xs={24} sm={24} md={11} lg={11} xl={11}>
                 <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><a href="../snake.html"><AppleOutlined style={{ color: "red", fontSize: 30 }} />  Snake</a></Button>
               <p style={{marginTop : 15}}>Snake est un jeu originellement paru en 1976, puis remis au gôut du jour en 1998 grâce aux Nokia, dans lesquels il était préinstallé.</p><p>Cette version a été créée en Javascript natif.</p>
               </Col>
-              <Col span={11} offset={1}>
+              <Col xs={24} sm={24} md={11} lg={11} xl={11} offset={1}>
                 <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><Link to="/pendu"><FrownOutlined style={{ color: "yellow", fontSize: 30 }} />  Pendu</Link></Button>
                 <p style={{marginTop : 15}}>Les origines du jeu du pendu sont inconnues, mais une variante a été découverte dès 1894. Notre version ici a été développée entièrement via React.Js.</p>
               </Col>
