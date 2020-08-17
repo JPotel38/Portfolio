@@ -73,7 +73,8 @@ function Pendu() {
     setValid(false);
     setFinish(false);
     setHidden('');
-    setWord('')
+    setWord('');
+    setTabLetters([])
   }
 
   if (valid == true) {

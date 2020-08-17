@@ -31,7 +31,7 @@ function Game() {
               </Col>
               <Col span={11} offset={1}>
                 <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><Link to="/pendu"><FrownOutlined style={{ color: "yellow", fontSize: 30 }} />  Pendu</Link></Button>
-                <p style={{marginTop : 15}}>Les origines du jeu du pendu sont inconnues, mais une variante a été découverte dès 1894. Notre version ici a été développé entièrement via React.Js.</p>
+                <p style={{marginTop : 15}}>Les origines du jeu du pendu sont inconnues, mais une variante a été découverte dès 1894. Notre version ici a été développée entièrement via React.Js.</p>
               </Col>
             </Row>
           </div>
