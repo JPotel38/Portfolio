@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Input, Row, Col, Button, Layout, Modal } from 'antd';
 import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom';
 import Nav from './Sider';
-import { SettingTwoTone } from '@ant-design/icons';
 
 const { Title } = Typography;
-const { Sider, Content } = Layout;
+const { Content } = Layout;
 
 
 function Pendu() {
@@ -25,23 +24,23 @@ function Pendu() {
   useEffect(() => {
     function ifFinish() {
 
-    if(hidden != undefined && JSON.stringify(word) == JSON.stringify(hidden)){
-      setValid(false);
-      setFinish(true);
-      Modal.success({
-        content: 'Gagné :)'
-      });
-    } else if (points == 0){
-      setValid(false);
-      setFinish(true);
-      Modal.error({
-        content: 'Perdu :('
-      });
+      if (hidden != undefined && JSON.stringify(word) == JSON.stringify(hidden)) {
+        setValid(false);
+        setFinish(true);
+        Modal.success({
+          content: 'Gagné :)'
+        });
+      } else if (points == 0) {
+        setValid(false);
+        setFinish(true);
+        Modal.error({
+          content: 'Perdu :('
+        });
 
-    }
-  } ifFinish()
+      }
+    } ifFinish()
   }, [addLetter]);
-  
+
 
   function validWord() {
     if (word.length == 0) {
@@ -58,19 +57,19 @@ function Pendu() {
   }
 
   function validLetter() {
-    setTabLetters( [...tabLetters, letter + ' '] );
-      var index = word.indexOf(letter)
-      if (index !== -1) {
-        hidden.splice(index, 1, letter);
-        setAddLetter(addLetter + 1);
-      } else {
-        setPoints(points - 1);
-        setAddLetter(addLetter + 1);
-      }
-      setLetter('')
+    setTabLetters([...tabLetters, letter + ' ']);
+    var index = word.indexOf(letter)
+    if (index !== -1) {
+      hidden.splice(index, 1, letter);
+      setAddLetter(addLetter + 1);
+    } else {
+      setPoints(points - 1);
+      setAddLetter(addLetter + 1);
+    }
+    setLetter('')
   }
 
-  function again(){
+  function again() {
     setValid(false);
     setFinish(false);
     setHidden('');
@@ -80,95 +79,95 @@ function Pendu() {
   if (valid == true) {
     return (
 
-        <Layout style={{ height: "100vh" }}>
-          <Nav />
-          <Layout style={{ heigth: "auto" }}>
-            <Content style={{ margin: '24px 16px 0' }}>
-              <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
+      <Layout style={{ height: "100vh" }}>
+        <Nav />
+        <Layout style={{ heigth: "auto" }}>
+          <Content style={{ margin: '24px 16px 0' }}>
+            <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
               <Row>
-                  <Col>
+                <Col>
                   <Title>Pendu</Title>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col span={16} offset={8}>
-                    <Title level={2}>Au deuxième joueur de deviner !</Title>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col span={16} offset={8}>
-                  <p style={{fontSize:30}}>Mot à trouver : {hidden.toString()}</p>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col span={8} offset={8}>
-                  <p style={{fontSize:30}}>Lettres utilisées : {tabLetters}</p>
-                  </Col>
-                </Row>
-                <Row >
-                  <Col span={4} offset={8}>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={16} offset={8}>
+                  <Title level={2}>Au deuxième joueur de deviner !</Title>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={16} offset={8}>
+                  <p style={{ fontSize: 30 }}>Mot à trouver : {hidden.toString()}</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={8} offset={8}>
+                  <p style={{ fontSize: 30 }}>Lettres utilisées : {tabLetters}</p>
+                </Col>
+              </Row>
+              <Row >
+                <Col span={4} offset={8}>
                   <Input type="text" maxLength="1" placeholder="Votre lettre" onChange={(e) => setLetter(e.target.value.toUpperCase())}
                     value={letter} />
-                    <Button type="submit" style={{ marginTop: 20 }} onClick={() => validLetter()}>  Ok</Button>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col span={16} offset={8}>
-                  <p style={{fontSize:30}}>Points : {points}</p>
-                  </Col>
-                </Row>
-              </div>
-            </Content>
-          </Layout>
+                  <Button type="submit" style={{ marginTop: 20 }} onClick={() => validLetter()}>  Ok</Button>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={16} offset={8}>
+                  <p style={{ fontSize: 30 }}>Points : {points}</p>
+                </Col>
+              </Row>
+            </div>
+          </Content>
         </Layout>
-      )
-
-  } else if(finish == true) {
-    return (
-      <Layout style={{ height: "100vh" }}>
-          <Nav />
-          <Layout style={{ heigth: "auto" }}>
-            <Content style={{ margin: '24px 16px 0' }}>
-              <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
-                <Row>
-                  <Col span={16} offset={8}>
-                  <Button className="button" shape="round" target="_blank" style={{ marginTop: 30, fontSize: 30 }} onClick={ ()=>again() }><Link to="/pendu">  Recommencer</Link></Button>
-                  </Col>
-                </Row>
-              </div>
-            </Content>
-          </Layout>
-        </Layout>
+      </Layout>
     )
-} else {
+
+  } else if (finish == true) {
+    return (
+      <Layout style={{ height: "100vh" }}>
+        <Nav />
+        <Layout style={{ heigth: "auto" }}>
+          <Content style={{ margin: '24px 16px 0' }}>
+            <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
+              <Row>
+                <Col span={16} offset={8}>
+                  <Button className="button" shape="round" target="_blank" style={{ marginTop: 30, fontSize: 30 }} onClick={() => again()}><Link to="/pendu">  Recommencer</Link></Button>
+                </Col>
+              </Row>
+            </div>
+          </Content>
+        </Layout>
+      </Layout>
+    )
+  } else {
 
     return (
       <Layout style={{ height: "100vh" }}>
-          <Nav />
-          <Layout style={{ heigth: "auto" }}>
-            <Content style={{ margin: '24px 16px 0' }}>
-              <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
-                <Row>
-                  <Col>
+        <Nav />
+        <Layout style={{ heigth: "auto" }}>
+          <Content style={{ margin: '24px 16px 0' }}>
+            <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
+              <Row>
+                <Col>
                   <Title>Pendu</Title>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col span={16} offset={8}>
-                    <Title level={2}>Le premier joueur doit choisir le mot</Title>
-                  </Col>
-                </Row>
-                <Row >
-                  <Col span={8} offset={8}>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={16} offset={8}>
+                  <Title level={2}>Le premier joueur doit choisir le mot</Title>
+                </Col>
+              </Row>
+              <Row >
+                <Col span={8} offset={8}>
                   <Input type="text" placeholder="Mot" onChange={(e) => setWord(e.target.value.toUpperCase())}
-                value={word} />
-                    <Button type="submit" style={{ marginTop: 20 }} onClick={() => validWord()}>  Ok</Button>
-                  </Col>
-                </Row>
-              </div>
-            </Content>
-          </Layout>
+                    value={word} />
+                  <Button type="submit" style={{ marginTop: 20 }} onClick={() => validWord()}>  Ok</Button>
+                </Col>
+              </Row>
+            </div>
+          </Content>
         </Layout>
+      </Layout>
     );
   }
 }
