@@ -158,7 +158,7 @@ useEffect(() =>{
               </Col>
               <Col xs={10} sm={6} md={3} offset={1}>
 
-              <img src="../antd.svg" title='Ant Design' alt='Ant Design' style={{ width: "60%" }} />
+              <img src="../antd.svg" title='Ant Design' alt='Ant Design' style={{ width: "60%", marginBottom:"5px" }} />
                   <Progress
                     type="circle"
                     strokeColor={{
