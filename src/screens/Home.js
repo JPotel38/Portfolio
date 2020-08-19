@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Layout, Divider, Row, Col, Button, Typography, Progress } from 'antd';
-import { FilePdfOutlined, MailOutlined } from '@ant-design/icons';
+import { FilePdfOutlined, MailOutlined, AntDesignOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faHtml5, faCss3Alt, faBootstrap, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import Flip from 'react-reveal/Flip';
@@ -17,7 +17,7 @@ function Home() {
 const [html, setHtml] = useState(0);
 const [css, setCss] = useState(0);
 const [js, setJs] = useState(0);
-const [boot, setBoot] = useState(0);
+const [antd, setAntd] = useState(0);
 const [node, setNode] = useState(0);
 const [react, setReact] = useState(0);
 
@@ -39,19 +39,19 @@ useEffect(() =>{
   };
 }, [js]);
 useEffect(() =>{
-  if(boot < 70){
-    setTimeout(function(){ setBoot(prevBoot => prevBoot + 1); }, 10);
+  if(antd < 65){
+    setTimeout(function(){ setAntd(prevAntd => prevAntd + 1); }, 10);
   };
-}, [boot]);
+}, [antd]);
 
 useEffect(() =>{
-  if(node < 55){
+  if(node < 50){
     setTimeout(function(){ setNode(prevNode => prevNode + 1); }, 10);
   };
 }, [node]);
 
 useEffect(() =>{
-  if(react < 65){
+  if(react < 55){
     setTimeout(function(){ setReact(prevReact => prevReact + 1); }, 10);
   };
 }, [react]);
@@ -157,20 +157,15 @@ useEffect(() =>{
        
               </Col>
               <Col xs={10} sm={6} md={3} offset={1}>
-            
-                  <FontAwesomeIcon
-                    icon={faBootstrap}
-                    size="8x"
-                    color="#563D7C"
-                    title="Bootstrap"
-                  />
+
+              <img src="../antd.svg" title='Ant Design' alt='Ant Design' style={{ width: "60%" }} />
                   <Progress
                     type="circle"
                     strokeColor={{
                       '0%': '#108ee9',
                       '100%': '#563D7C',
                     }}
-                    percent={boot}
+                    percent={antd}
                   />
      
               </Col>
