@@ -11,16 +11,13 @@ const { Content } = Layout;
 const { Title } = Typography;
 const { Meta } = Card;
 
-function Projet(props) {
-
-  console.log(Card)
-  console.log(props)
+function Projet() {
 
   return (
     <Layout style={{ height: "100vh" }}>
       <Sider />
       <Layout style={{ heigth: "auto" }}>
-        <Content style={{ margin: '24px 16px 0' }}>
+        <Content >
           <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
             <Row>
               <Col span={24}>
@@ -32,12 +29,11 @@ function Projet(props) {
             <Row gutter={[16, 24]}>
               <Col span={12}>
                 <Fade left>
-                  <Link to="/Masques">
-
+                  <Link to="/masques">
                     <Card
                       hoverable
                       style={{ width: "100%", height: "100%" }}
-                      cover={<img alt="masques" src="../Masques.png" />}
+                      cover={<img alt="Masques.org Jérémy Potel" src="../Masques.png" />}
                     >
                       <Meta style={{ fontSize: "20px" }} title="Masques.org" description=" Masques.org est le projet final du bootcamp La Capsule." />
                     </Card>
@@ -46,11 +42,11 @@ function Projet(props) {
               </Col>
               <Col span={12}>
                 <Fade right>
-                  <Link to="/Morningnews">
+                  <Link to="/morningnews">
                     <Card
                       hoverable
                       style={{ width: "100%", height: "100%" }}
-                      cover={<img alt="Morningnews" src="../Morningnews.png" />}
+                      cover={<img alt="Morningnews Jérémy Potel" src="../Morningnews.png" />}
                     >
                       <Meta style={{ fontSize: "20px" }} title="MorningNews" description="MorningNews fait appel à une API pour obtenir les nouvelles du monde entier." />
                     </Card>
@@ -59,11 +55,11 @@ function Projet(props) {
               </Col>
               <Col span={12}>
                 <Fade left>
-                  <Link to="/Blackboard">
+                  <Link to="/blackboard">
                     <Card
                       hoverable
                       style={{ width: "100%", height: "100%" }}
-                      cover={<img alt="BlackBoard" src="../Blackboard.png" />}
+                      cover={<img alt="BlackBoard Jérémy Potel" src="../Blackboard.png" />}
                     >
                       <Meta style={{ fontSize: "20px" }} title="BlackBoard" description="BlackBoard est l'outil idéal pour réaliser des Dataviz !" />
                     </Card>
@@ -72,11 +68,11 @@ function Projet(props) {
               </Col>
               <Col span={12}>
                 <Fade right>
-                  <Link to="/Mymoviz">
+                  <Link to="/mymoviz">
                     <Card
                       hoverable
                       style={{ width: "100%", height: "100%" }}
-                      cover={<img alt="Mymoviz" src="../Mymoviz.png" />}
+                      cover={<img alt="Mymoviz Jérémy Potel" src="../Mymoviz.png" />}
                     >
                       <Meta style={{ fontSize: "20px" }} title="MyMoviz" description="My Moviz permet de voir les dernières sorties ainsi que noter et enregistre les films." />
                     </Card>
@@ -85,11 +81,11 @@ function Projet(props) {
               </Col>
               <Col span={12}>
                 <Fade left>
-                  <Link to="/Ticketac">
+                  <Link to="/ticketac">
                     <Card
                       hoverable
                       style={{ width: "100%", height: "100%" }}
-                      cover={<img alt="Ticketac" src="../Ticketac.png" />}
+                      cover={<img alt="Ticketac Jérémy Potel" src="../Ticketac.png" />}
                     >
                       <Meta style={{ fontSize: "20px" }} title="Ticketac" description="Ticketac est le projet réalisé dans le terme d'un hackathon, en duo sur trois jours." />
                     </Card>
@@ -98,11 +94,11 @@ function Projet(props) {
               </Col>
               <Col span={12}>
                 <Fade right>
-                  <Link to="/Bikeshop">
+                  <Link to="/bikeshop">
                     <Card
                       hoverable
                       style={{ width: "100%", height: "100%" }}
-                      cover={<img alt="Bikeshop" src="../Bikeshop.png" />}
+                      cover={<img alt="Bikeshop Jérémy Potel" src="../Bikeshop.png" />}
                     >
                       <Meta style={{ fontSize: "20px" }} title="Bike Shop" description="Bike Shop a été le premier projet réalisé à La Capsule." />
                     </Card>
@@ -111,11 +107,11 @@ function Projet(props) {
               </Col>
               <Col span={12}>
                 <Fade left>
-                  <Link to="/Weatherapp">
+                  <Link to="/weatherapp">
                     <Card
                       hoverable
                       style={{ width: "100%", height: "100%" }}
-                      cover={<img alt="Weatherapp" src="../Weatherapp.png" />}
+                      cover={<img alt="Weatherapp Jérémy Potel" src="../Weatherapp.png" />}
                     >
                       <Meta style={{ fontSize: "20px" }} title="Weatherapp" description="Weather App permet de connaître la température d'une ville en temps réel. " />
                     </Card>

@@ -7,7 +7,7 @@ import Sider from './Sider'
 const { Content } = Layout;
 const { Title, Text } = Typography;
 
-function Mymoviz(props) {
+function Mymoviz() {
 
   return (
 

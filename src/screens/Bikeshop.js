@@ -6,7 +6,7 @@ import Sider from './Sider'
 const { Content } = Layout;
 const { Title } = Typography;
 
-function Bikeshop(props) {
+function Bikeshop() {
 
   return (
 

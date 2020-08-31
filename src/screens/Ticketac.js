@@ -6,10 +6,9 @@ import Sider from './Sider'
 const { Content } = Layout;
 const { Title, Text } = Typography;
 
-function Ticketac(props) {
+function Ticketac() {
 
   return (
-
     <Layout style={{ height: "100vh" }}>
       <Sider />
       <Layout style={{ heigth: "auto" }}>

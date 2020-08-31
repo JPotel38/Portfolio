@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Redirect, BrowserRouter, Switch, Route} from 'react-router-dom'
   
 import Home from './screens/Home'
 import Education from './screens/Education'
@@ -15,8 +15,9 @@ import Blackboard from './screens/Blackboard'
 import Mymoviz from './screens/Mymoviz'
 import Weatherapp from './screens/Weatherapp'
 import Bikeshop from './screens/Bikeshop'
-import NotFound from './screens/NotFound'
 import Pendu from './screens/Pendu'
+import NotFound from './screens/NotFound'
+
 
 export default function App() {
   return (
@@ -37,7 +38,7 @@ export default function App() {
           <Route path="/weatherapp" component={Weatherapp}  />
           <Route path="/bikeshop" component={Bikeshop}  />
           <Route path="/pendu" component={Pendu}  />
-          <Route path="*" component={NotFound}  />
+          <Route component={NotFound}/>
         </Switch>
       </Router>
   );

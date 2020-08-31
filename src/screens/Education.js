@@ -6,7 +6,7 @@ import Sider from './Sider'
 const { Content} = Layout;
 const {Title, Text} = Typography
 
-function Education(props) {
+function Education() {
 
   const [details, setDetails] = useState()
 
@@ -16,29 +16,28 @@ function Education(props) {
       <Row>
         
         <Col span={8}>
-          <Title level={4}>En Front :</Title>
+          <Title level={4}>En Front-end :</Title>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>React.JS</li>
-          <li>React Native via Expo</li>
+          <li><strong>HTML</strong></li>
+          <li><strong>CSS</strong></li>
+          <li><strong>Javascript</strong></li>
+          <li><strong>React.JS</strong></li>
+          <li><strong>React Native et Expo</strong></li>
         </ul>
         </Col>
         <Col span={8}>
-        <Title level={4}>En Back :</Title>
+        <Title level={4}>En Back-end :</Title>
         <ul>
-        <li>Javascript</li>
-          <li>Node.JS</li>
-          <li>Express</li>
+          <li><strong>Node.JS</strong></li>
+          <li><strong>Express</strong></li>
         </ul>
         </Col>
         <Col span={8}>
         <Title level={4}>Design et responsive :</Title>
         <ul>
-        <li>Bootstrap</li>
-          <li>Reactstrap</li>
-          <li>Ant Design</li>
+          <li><strong>Bootstrap</strong></li>
+          <li><strong>Reactstrap</strong></li>
+          <li><strong>Ant Design</strong></li>
         </ul>
         </Col>
      </Row>
@@ -57,8 +56,7 @@ function Education(props) {
 
 
 return (
-    
-  <Layout style={{height : "100vh"}}>
+   <Layout style={{height : "100vh"}}>
   <Sider/>
     <Layout style={{heigth : "auto"}}>
       <Content style={{ margin: '24px 16px 0' }}>

@@ -6,10 +6,7 @@ const { Content } = Layout;
 const { Title, Text } = Typography
 const { TabPane } = Tabs;
 
-function Pro(props) {
-
-
-
+function Pro() {
 
   return (
     <Layout style={{ height: "100vh" }}>

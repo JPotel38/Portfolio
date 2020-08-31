@@ -6,10 +6,9 @@ import Sider from './Sider'
 const { Content } = Layout;
 const { Title } = Typography;
 
-function Weatherapp(props) {
+function Weatherapp() {
 
   return (
-
     <Layout style={{ height: "100vh" }}>
       <Sider />
       <Layout style={{ heigth: "auto" }}>
