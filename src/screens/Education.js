@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Layout, Timeline, Typography, Row, Col, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import Sider from './Sider'
+import Nav from './Sider'
 
 const { Content} = Layout;
 const {Title, Text} = Typography
@@ -57,7 +57,7 @@ function Education() {
 
 return (
    <Layout style={{height : "100vh"}}>
-  <Sider/>
+  <Nav/>
     <Layout style={{heigth : "auto"}}>
       <Content style={{ margin: '24px 16px 0' }}>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>

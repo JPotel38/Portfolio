@@ -34,6 +34,12 @@ function Game() {
                 <p style={{marginTop : 15}}>Les origines du jeu du pendu sont inconnues, mais une variante a été découverte dès 1894. Notre version ici a été développée entièrement via React.Js.</p>
               </Col>
             </Row>
+            <Row>
+            <Col xs={24} sm={24} md={11} lg={11} xl={11} offset={1}>
+                <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><Link to="/pingpong"><FrownOutlined style={{ color: "yellow", fontSize: 30 }} />  Pingpong</Link></Button>
+                <p style={{marginTop : 15}}> </p>
+              </Col>
+            </Row>
           </div>
         </Content>
       </Layout>

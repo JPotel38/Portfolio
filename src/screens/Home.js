@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Layout, Divider, Row, Col, Button, Typography, Progress } from 'antd';
+import { Layout, Row, Col, Button, Typography, Progress } from 'antd';
 import { FilePdfOutlined, MailOutlined } from '@ant-design/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faHtml5, faCss3Alt, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
@@ -78,7 +78,6 @@ useEffect(() =>{
                     <img src="../photo.jpg" alt='Jérémy Potel' style={{ borderRadius: "50%", width: "100%" }} />
                   </Flip>
                 </Col>
-
                 <Col span={16} offset={2}>
                   <Text><p>Gravitant dans l'univers du code depuis 2019 à travers l'apprentissage du COBOL,
                   je viens d'achever une formation intensive Javascript fullstack à <a href="https://www.lacapsule.academy/fr/">La Capsule Academy</a> pour enrichir mes compétences <strong>HTML</strong>/ <strong>CSS</strong>/ <strong>Javascript</strong>/ <strong>React.JS</strong> et <strong>Node.JS</strong>. La Capsule propose un apprentissage à travers la réalisation de projets seuls ou en groupe.</p>
@@ -98,9 +97,7 @@ useEffect(() =>{
                   <Button className="button" href="../CV.pdf" target="_blank" shape="round" style={{ fontSize: 30 }}> <FilePdfOutlined style={{ color: "red", fontSize: 30 }} />CV</Button>
                 </Col>
               </Row>
-
             </div>
-            <Divider />
             <Row>
               <Col><Title level={2}>Mes compétences en développement web</Title></Col>
               </Row>
