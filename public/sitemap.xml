@@ -4,21 +4,22 @@
 <loc>http://www.jeremy-potel.fr/</loc>
 <priority>1</priority>
  </url>
-<url> <loc>http://www.jeremy-potel.fr/education</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/pro</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/perso</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/projets</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/education/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/pro/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/perso/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/projets/</loc> </url>
 <url> 
-<loc>http://www.jeremy-potel.fr/game</loc>
+<loc>http://www.jeremy-potel.fr/game/</loc>
  <changefreq>monthly</changefreq>
  </url>
-<url> <loc>http://www.jeremy-potel.fr/masques</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/morningnews</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/ticketac</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/blackboard</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/mymoviz</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/weatherapp</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/bikeshop</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/pendu</loc> </url>
-<url> <loc>http://www.jeremy-potel.fr/404</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/masques/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/morningnews/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/ticketac/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/blackboard/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/mymoviz/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/weatherapp/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/bikeshop/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/pendu/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/pingpong/</loc> </url>
+<url> <loc>http://www.jeremy-potel.fr/404/</loc> </url>
 </urlset>

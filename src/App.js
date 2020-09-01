@@ -16,6 +16,7 @@ import Mymoviz from './screens/Mymoviz'
 import Weatherapp from './screens/Weatherapp'
 import Bikeshop from './screens/Bikeshop'
 import Pendu from './screens/Pendu'
+import Pingpong from './screens/Pingpong'
 import NotFound from './screens/NotFound'
 
 
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/weatherapp" component={Weatherapp}  />
           <Route path="/bikeshop" component={Bikeshop}  />
           <Route path="/pendu" component={Pendu}  />
+          <Route path="/pingpong" component={Pingpong}  />
           <Route component={NotFound}/>
         </Switch>
       </Router>
