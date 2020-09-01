@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout, Row, Typography, Col, Button } from 'antd';
 import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom';
-import { AppleOutlined, FrownOutlined} from '@ant-design/icons';
+import { AppleOutlined, FrownOutlined, DribbbleOutlined} from '@ant-design/icons';
 import Nav from './Sider';
 
 
@@ -27,17 +27,17 @@ function Game() {
             <Row >
               <Col xs={24} sm={24} md={11} lg={11} xl={11}>
                 <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><a href="../snake.html"><AppleOutlined style={{ color: "red", fontSize: 30 }} />  Snake</a></Button>
-              <p style={{marginTop : 15}}>Snake est un jeu originellement paru en 1976, puis remis au gôut du jour en 1998 grâce aux Nokia, dans lesquels il était préinstallé.</p><p>Cette version a été créée en Javascript natif.</p>
+              <p style={{marginTop : 15}}>Snake est un jeu originellement paru en 1976, puis remis au gôut du jour en 1998 grâce aux Nokia, dans lesquels il était préinstallé.</p>
               </Col>
               <Col xs={24} sm={24} md={11} lg={11} xl={11} offset={1}>
                 <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><Link to="/pendu"><FrownOutlined style={{ color: "yellow", fontSize: 30 }} />  Pendu</Link></Button>
-                <p style={{marginTop : 15}}>Les origines du jeu du pendu sont inconnues, mais une variante a été découverte dès 1894. Notre version ici a été développée entièrement via React.Js.</p>
+                <p style={{marginTop : 15}}>Les origines du jeu du pendu sont inconnues, mais une variante a été découverte dès 1894.</p>
               </Col>
             </Row>
             <Row>
-            <Col xs={24} sm={24} md={11} lg={11} xl={11} offset={1}>
-                <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><Link to="/pingpong"><FrownOutlined style={{ color: "yellow", fontSize: 30 }} />  Pingpong</Link></Button>
-                <p style={{marginTop : 15}}> </p>
+            <Col xs={24} sm={24} md={11} lg={11} xl={11}>
+                <Button className="button" shape="round" target="_blank" style={{ fontSize: 30 }}><Link to="/pingpong"><DribbbleOutlined style={{ color: "grey", fontSize: 30 }} />  Pingpong</Link></Button>
+                <p style={{marginTop : 15}}> Ce sport d'origine britannique est pratiqué par des millions de personnes dans le monde. Saurez-vous vaincre votre adversaire ?</p>
               </Col>
             </Row>
           </div>
