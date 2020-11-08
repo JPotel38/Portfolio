@@ -8,7 +8,7 @@ const {Title, Text} = Typography
 
 function Education() {
 
-  const [details, setDetails] = useState()
+  const [details, setDetails] = useState(null)
 
   function capsule() {
     setDetails(<Text>La Capsule est un bootcamp de code qui dure onze semaines. L'objectif de cette formation est de délivrer les notions de base pour être un développeur Javascript fullstack. L'apprentissage tournait autour de la réalisation de projets, afin d'effectuer une solide montée en compétence.
@@ -59,23 +59,23 @@ return (
    <Layout style={{height : "100vh"}}>
   <Nav/>
     <Layout style={{heigth : "auto"}}>
-      <Content style={{ margin: '24px 16px 0' }}>
+      <Content>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
     <Row><Col span={24}><Title> Education </Title></Col> </Row>
   <Row>
 
    
   <Timeline mode={"left"}>
-    <Timeline.Item label="2020"><Text >Bootcamp Javascript Full stack à La Caspule</Text><Button style={{marginLeft:5}} onClick={() => {capsule()}}><SearchOutlined /></Button></Timeline.Item>
-    <Timeline.Item label="2019"><Text >Formation ingénieur Etudes et Développement Mainframe</Text><Button style={{marginLeft:5}} onClick={() => {adaming()}}><SearchOutlined /></Button></Timeline.Item> 
-    <Timeline.Item label="2017"><Text >Master 2 Relations Internationales spécialité Francophonie et Développement Durable</Text><Button style={{marginLeft:5}} onClick={() => {master2()}}><SearchOutlined /></Button></Timeline.Item>
-    <Timeline.Item label="2014" ><Text  >Master 1 Histoire Moderne et Contemporaine</Text></Timeline.Item>
-    <Timeline.Item label="2012" ><Text >Licence Histoire</Text></Timeline.Item>
-    <Timeline.Item label="2008" ><Text  >Bac Economique et Social</Text></Timeline.Item>
+    <Timeline.Item label="2020"><Text >Bootcamp Javascript Full stack à La Caspule, Lyon.</Text><Button style={{marginLeft:5}} onClick={() => {capsule()}}><SearchOutlined /></Button></Timeline.Item>
+    <Timeline.Item label="2019"><Text >Formation ingénieur Etudes et Développement Mainframe - Adaming Conseil, Lyon.</Text><Button style={{marginLeft:5}} onClick={() => {adaming()}}><SearchOutlined /></Button></Timeline.Item> 
+    <Timeline.Item label="2017"><Text >Master 2 Relations Internationales spécialité Francophonie et Développement Durable - Lyon 3.</Text><Button style={{marginLeft:5}} onClick={() => {master2()}}><SearchOutlined /></Button></Timeline.Item>
+    <Timeline.Item label="2014"><Text >Master 1 Histoire Moderne et Contemporaine - Lyon 2.</Text></Timeline.Item>
+    <Timeline.Item label="2012"><Text >Licence Histoire - Université Pierre Mendès France, Grenoble.</Text></Timeline.Item>
+    <Timeline.Item label="2008"><Text >Bac Economique et Social - Lycée Champollion, Grenoble.</Text></Timeline.Item>
   </Timeline>
 
   <Col>
-{details}
+      {details}
   </Col>
   </Row>
         </div>

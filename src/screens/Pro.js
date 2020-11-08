@@ -12,7 +12,7 @@ function Pro() {
     <Layout style={{ height: "100vh" }}>
       <Nav />
       <Layout style={{ heigth: "auto" }}>
-        <Content style={{ margin: '24px 16px 0' }}>
+        <Content>
           <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
             <Row><Col span={18}><Title>Expériences professionnelles</Title></Col></Row>
 

@@ -3,29 +3,23 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
-
+.ant-layout-content {
+  background-color: white;
+  margin :0;
+}
 .ant-typography{
-  color : white !important;
   font-size:16px;
 }
 .ant-typography ul li{
   font-size: 16px;
-  
    }
-.ant-progress-text{
-  color : white !important;
- }
 
- p{
-  color:white;
-  font-size:16px;
+ p
+ {
+  font-size:18px;
 }
- .ant-timeline-item-label{
-    color: white;
 
- }
  .ant-tabs-tab{
-    color : white;
     font-size:40px;
  }
 
@@ -41,6 +35,7 @@
     margin: 5px;
     font-size:20px;
   }
+
   a.ant-btn {
     padding-top: 10px;
     line-height: 30px;
@@ -49,10 +44,10 @@
     margin-bottom: 64px !important;
   }
 
-  #particles {
+  /* #particles {
     position:fixed !important;
     min-width:100% !important;
     min-height: 100% !important;
     background: #343A3F;
     margin: 0 !important
-  }
+  } */
