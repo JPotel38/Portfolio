@@ -13,7 +13,7 @@ function NotFound() {
     <Layout style={{ height: "100vh" }}>
       <Nav />
       <Layout style={{ heigth: "auto" }}>
-        <Content style={{ margin: '24px 16px 0' }}>
+        <Content>
           <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
             <Row>
               <Col span={24}>

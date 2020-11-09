@@ -13,9 +13,7 @@ function Perso() {
       <Content>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
           <Row>
-            <Col span={8}>
               <Title>Projets personnels</Title>
-            </Col>
           </Row>
           <Title level={2}>KultureMania</Title>
           <Row gutter={[16, 24]}>
