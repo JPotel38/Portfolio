@@ -16,14 +16,11 @@ function NotFound() {
         <Content>
           <div className="site-layout-background" style={{ padding: 24, height: "100%" }}>
             <Row>
-              <Col span={24}>
+            <Col span={24}>
                 <Title>Not found :(</Title>
-                  <Button className="button" shape="round" style={{ fontSize: 30 }}>
-                  <Link to="/">
-                  Go Home
-                  </Link>
-                    </Button>
-                
+                  </Col>
+                  <Col xs={0} sm={0} md={23} offset={1}>
+                    <img src="../404.png" style={{width: "500px"}}/>
               </Col>
             </Row>
           </div>
