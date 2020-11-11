@@ -3,6 +3,10 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
+p
+{
+  font-size:18px;
+}
 .ant-layout-content {
   background-color: white;
   margin :0;
@@ -13,11 +17,6 @@
 .ant-typography ul li{
   font-size: 16px;
    }
-
- p
- {
-  font-size:18px;
-}
 
  .ant-tabs-tab{
     font-size:40px;

@@ -14,8 +14,7 @@ function Pro() {
       <Layout style={{ heigth: "auto" }}>
         <Content>
           <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-            <Row><Col span={18}><Title>Expériences professionnelles</Title></Col></Row>
-
+            <Row><Col span={24}><Title>Expériences professionnelles</Title></Col></Row>
             <Row>
               <Tabs defaultActiveKey="1" centered size="large" keyboard tabBarGutter={400} >
                 <TabPane tab="2019" key="1">
