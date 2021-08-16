@@ -3,12 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import ParticlesBackground from "./Particles"
-
 
 ReactDOM.render(
   <React.StrictMode>
-  {/* <ParticlesBackground/> */}
     <App />
   </React.StrictMode>,
   document.getElementById('root')
