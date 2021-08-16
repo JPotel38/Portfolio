@@ -1,5 +1,12 @@
 @import '~antd/dist/antd.css';
 
+:root {
+    --red: #ff124f;
+    --dark-blue: #383e65;
+    --pink: #ff00a0;
+    --text-shadow: rgb(0, 208, 255);
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
@@ -39,6 +46,10 @@ p {
     margin-top: 15px;
 }
 
+.ant-tabs-tab {
+    font-size: 40px;
+}
+
 a.ant-btn {
     padding-top: 10px;
     line-height: 30px;
@@ -46,4 +57,36 @@ a.ant-btn {
 
 .ant-tabs-nav {
     margin-bottom: 64px !important;
+}
+
+.ant-layout-sider-children{
+    background: var(--dark-blue);
+}
+
+.ant-menu{
+    background: var(--dark-blue);
+}
+
+.ant-menu-item {
+    margin-top: 15px;
+}
+
+.ant-menu-item a:hover {
+    color: var(--red);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--red);
+}
+
+#github-icon {
+    color: #92D050;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#linkedin-icon {
+    color: blue;
+    font-size: 25px;
+    margin-top: 10px;
 }
