@@ -118,10 +118,7 @@ export default function Home() {
 
                         <Progress
                             type="circle"
-                            strokeColor={{
-                                '0%': '#108ee9',
-                                '100%': '#EA5F25',
-                            }}
+                            strokeColor='#EA5F25'
                             percent={html}
                             trailColor="#E5E5E5"
                         />

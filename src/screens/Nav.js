@@ -3,16 +3,16 @@ import {Layout, Menu} from 'antd';
 import {HomeOutlined, GithubFilled, LinkedinFilled} from '@ant-design/icons';
 import {Link} from 'react-router-dom'
 
-const {Sider} = Layout;
+const {Header} = Layout;
 
 export default function Nav() {
 
     return (
-        <Sider
+        <Header
             breakpoint="md"
             collapsedWidth={0}>
-            <Menu mode="inline" style={{paddingTop: 60, width: '100%'}}>
-                <Menu.Item key="0" style={{height: 50, marginBottom: 50}} icon={<HomeOutlined style={{fontSize: 50}}/>}>
+            <Menu mode="horizontal">
+                <Menu.Item key="0" icon={<HomeOutlined/>}>
                     <Link to='/Portfolio'/>
                 </Menu.Item>
                 <Menu.Item key="1"><Link to='/education'>Education</Link>
@@ -35,6 +35,6 @@ export default function Nav() {
                         LinkedIn</a>
                 </Menu.Item>
             </Menu>
-        </Sider>
+        </Header>
     );
 }

@@ -2,9 +2,44 @@
 
 :root {
     --red: #ff124f;
-    --dark-blue: #383e65;
-    --pink: #ff00a0;
+    --purple: #7700a6;
+    --blue: #00b3fe;
+    --yellow: #defe47;
+    --dark-blue: #01012b;
+    --pink: #ff2a6d;
+    --black: #000c17;
+    --white: #E5E5E5;
+    --light-green: #d1f7ff;
+    --dark-green: #005678;
     --text-shadow: rgb(0, 208, 255);
+}
+
+@keyframes hovering-button {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
 }
 
 * {
@@ -23,10 +58,6 @@ p {
     font-size: 40px;
 }
 
-.ant-divider {
-    background-color: #5DADE2 !important;
-}
-
 .button {
     text-align: center;
     height: 50px;
@@ -39,7 +70,7 @@ p {
 .gameButton {
     font-size: 20px;
     height: 40px;
-    background-color: #E5E5E5;
+    background-color: var(--white);
 }
 
 .gameText {
@@ -59,34 +90,52 @@ a.ant-btn {
     margin-bottom: 64px !important;
 }
 
-.ant-layout-sider-children{
+.ant-layout-header {
     background: var(--dark-blue);
-}
-
-.ant-menu{
-    background: var(--dark-blue);
+    height: auto;
 }
 
 .ant-menu-item {
-    margin-top: 15px;
+    background: var(--dark-blue);
+    font-size: 25px;
 }
 
-.ant-menu-item a:hover {
-    color: var(--red);
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+    border-bottom: none;
+    background: var(--dark-blue);
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
+    background: var(--dark-blue);
+}
+
+.ant-menu-horizontal > .ant-menu-item a:hover {
+    color: var(--light-green);
+}
+
+.ant-menu-title-content {
+    color: var(--dark-green);
+}
+
+.ant-menu-title-content:hover {
     border-style: solid;
-    border-width: 2px;
-    border-color: var(--red);
+    border-color: var(--pink);
+}
+
+.ant-menu-horizontal > .ant-menu-item a{
+    color: var(--dark-green);;
+}
+
+.ant-menu-submenu-selected::after {
+    border-bottom: none;
 }
 
 #github-icon {
     color: #92D050;
     font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #linkedin-icon {
     color: blue;
     font-size: 25px;
-    margin-top: 10px;
 }
