@@ -1,7 +1,8 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import Sider from './Nav'
+import Sider from './Nav';
+import weatehrapp from '../images/Weatherapp.PNG'
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -9,12 +10,12 @@ const {Title} = Typography;
 export default function Weatherapp() {
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Sider/>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
                     <Col span={6}>
-                        <Title>My Moviz</Title>
+                        <Title>Weather App</Title>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/WeatherApp" target="_blank"
@@ -24,7 +25,7 @@ export default function Weatherapp() {
                 </Row>
                 <Row style={{marginTop: 30}}>
                     <Col span={15}>
-                        <img alt="WeatherApp" src="../Weatherapp.png" width="100%"/>
+                        <img alt="WeatherApp" src={weatehrapp} width="100%"/>
                     </Col>
                     <Col offset={2} span={7}>
                         <p>Weather App est une application qui fait intervenir plusieurs outils. La map est

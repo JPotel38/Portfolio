@@ -89,8 +89,7 @@ export default function Pingpong() {
             break;
     }
     return (
-
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Nav/>
                 <Content>
                         <Row>

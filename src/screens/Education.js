@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
-import {Button, Col, Layout, Modal, Row, Timeline} from 'antd';
+import {Button, Col, Layout, Modal, Row, Timeline, Typography} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 import Nav from './Nav'
 
 const {Content} = Layout;
+const {Title} = Typography;
 
 export default function Education() {
 
@@ -126,35 +127,37 @@ export default function Education() {
         </p>)
     }
 
-
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Nav/>
             <Content>
-                <Row><Col span={24}><h1> Education </h1></Col></Row>
                 <Row>
-                    <Timeline mode={"left"}>
-                        <Timeline.Item label="2021"><p>Alternance à School By Hi!t,
-                            Lyon.</p><Button style={{marginLeft: 5}}
-                                             onClick={schoolByHiit}><SearchOutlined/></Button></Timeline.Item>
-                        <Timeline.Item label="2020"><p>Bootcamp Javascript Full stack à La Caspule,
-                            Lyon.</p><Button style={{marginLeft: 5}}
-                                             onClick={capsule}><SearchOutlined/></Button></Timeline.Item>
-                        <Timeline.Item label="2019"><p>Formation ingénieur Etudes et Développement Mainframe
-                            - Adaming Conseil, Lyon.</p><Button style={{marginLeft: 5}}
-                                                                onClick={adaming}><SearchOutlined/></Button></Timeline.Item>
-                        <Timeline.Item label="2017"><p>Master 2 Relations Internationales spécialité
-                            Francophonie et Développement Durable - Lyon 3.</p><Button
-                            style={{marginLeft: 5}} onClick={master2}><SearchOutlined/></Button></Timeline.Item>
-                        <Timeline.Item label="2014"><p>Master 1 Histoire Moderne et Contemporaine - Lyon
-                            2.</p></Timeline.Item>
-                    </Timeline>
-                    <Modal visible={isModalVisible}
-                           onOk={handleOk}
-                           onCancel={handleCancel}>
-                        {details}
-                    </Modal>
-                </Row>
+                    <Col span={24}>
+                        <Title>Education</Title>
+                    </Col>
+                </Row> <Row>
+                <Timeline mode={"left"}>
+                    <Timeline.Item label="2021"><p>Alternance à School By Hi!t,
+                        Lyon.</p><Button style={{marginLeft: 5}}
+                                         onClick={schoolByHiit}><SearchOutlined/></Button></Timeline.Item>
+                    <Timeline.Item label="2020"><p>Bootcamp Javascript Full stack à La Caspule,
+                        Lyon.</p><Button style={{marginLeft: 5}}
+                                         onClick={capsule}><SearchOutlined/></Button></Timeline.Item>
+                    <Timeline.Item label="2019"><p>Formation ingénieur Etudes et Développement Mainframe
+                        - Adaming Conseil, Lyon.</p><Button style={{marginLeft: 5}}
+                                                            onClick={adaming}><SearchOutlined/></Button></Timeline.Item>
+                    <Timeline.Item label="2017"><p>Master 2 Relations Internationales spécialité
+                        Francophonie et Développement Durable - Lyon 3.</p><Button
+                        style={{marginLeft: 5}} onClick={master2}><SearchOutlined/></Button></Timeline.Item>
+                    <Timeline.Item label="2014"><p>Master 1 Histoire Moderne et Contemporaine - Lyon
+                        2.</p></Timeline.Item>
+                </Timeline>
+                <Modal visible={isModalVisible}
+                       onOk={handleOk}
+                       onCancel={handleCancel}>
+                    {details}
+                </Modal>
+            </Row>
             </Content>
         </Layout>
     )

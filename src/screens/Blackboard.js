@@ -1,7 +1,8 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import Sider from './Nav'
+import Sider from './Nav';
+import blackboard from '../images/BlackBoard.PNG';
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -9,7 +10,7 @@ const {Title} = Typography;
 export default function Blackboard() {
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Sider/>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
@@ -27,7 +28,7 @@ export default function Blackboard() {
                     <Col span={15}>
                         <a href="https://blackboard-69.herokuapp.com/" target="_blank"
                            rel="noopener noreferrer">
-                            <img alt="BlackBoard" src="../BlackBoard.png" width="100%"/>
+                            <img alt="BlackBoard" src={blackboard} width="100%"/>
                         </a>
                     </Col>
                     <Col offset={2} span={7}>

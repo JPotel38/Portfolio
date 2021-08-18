@@ -1,8 +1,8 @@
 {
-  "name": "Portfolio",
+  "homepage": "http://jpotel38.github.io/Portfolio/",
+  "name": "portfolio",
   "version": "1.0",
   "private": true,
-  "homepage": "http://jpotel38.github.io/portfolio",
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -21,6 +21,7 @@
     "react-dom": "^16.14.0",
     "react-konva": "*",
     "react-reveal": "^1.2.2",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "^4.0.3",
@@ -28,12 +29,12 @@
     "surge": "^0.21.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "sitemap": "babel-node ./src/sitemap-generator.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

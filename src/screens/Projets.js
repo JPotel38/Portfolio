@@ -2,16 +2,23 @@ import React from 'react'
 import {Card, Col, Layout, Row, Typography} from 'antd';
 import {Link} from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
-import Sider from './Nav'
+import Sider from './Nav';
+import masques from '../images/Masques.png'
+import morningnews from '../images/Morningnews.png'
+import mymoviz from '../images/Mymoviz.PNG'
+import tickettac from '../images/Ticketac.PNG'
+import weatherapp from '../images/Weatherapp.PNG'
+import bikeshop from '../images/Bikeshop.PNG'
+import blackboard from '../images/BlackBoard.PNG'
 
 const {Content} = Layout;
 const {Title} = Typography;
 const {Meta} = Card;
 
-export default function Projet() {
+export default function Projets() {
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Sider/>
             <Content>
                 <Row>
@@ -26,7 +33,7 @@ export default function Projet() {
                                 <Card
                                     hoverable
                                     style={{width: "100%", height: "100%"}}
-                                    cover={<img alt="Masques.org Jérémy Potel" src="../Masques.png"/>}
+                                    cover={<img alt="Masques.org Jérémy Potel" src={masques}/>}
                                 >
                                     <Meta style={{fontSize: "20px"}} title="Masques.org"
                                           description=" Masques.org est le projet final du bootcamp La Capsule."/>
@@ -40,7 +47,7 @@ export default function Projet() {
                                 <Card
                                     hoverable
                                     style={{width: "100%", height: "100%"}}
-                                    cover={<img alt="Morningnews Jérémy Potel" src="../Morningnews.png"/>}
+                                    cover={<img alt="Morningnews Jérémy Potel" src={morningnews}/>}
                                 >
                                     <Meta style={{fontSize: "20px"}} title="MorningNews"
                                           description="MorningNews fait appel à une API pour obtenir les nouvelles du monde entier."/>
@@ -54,7 +61,7 @@ export default function Projet() {
                                 <Card
                                     hoverable
                                     style={{width: "100%", height: "100%"}}
-                                    cover={<img alt="BlackBoard Jérémy Potel" src="../Blackboard.png"/>}
+                                    cover={<img alt="BlackBoard Jérémy Potel" src={blackboard}/>}
                                 >
                                     <Meta style={{fontSize: "20px"}} title="BlackBoard"
                                           description="BlackBoard est l'outil idéal pour réaliser des Dataviz !"/>
@@ -68,7 +75,7 @@ export default function Projet() {
                                 <Card
                                     hoverable
                                     style={{width: "100%", height: "100%"}}
-                                    cover={<img alt="Mymoviz Jérémy Potel" src="../Mymoviz.png"/>}
+                                    cover={<img alt="Mymoviz Jérémy Potel" src={mymoviz}/>}
                                 >
                                     <Meta style={{fontSize: "20px"}} title="MyMoviz"
                                           description="My Moviz permet de voir les dernières sorties ainsi que noter et enregistre les films."/>
@@ -82,7 +89,7 @@ export default function Projet() {
                                 <Card
                                     hoverable
                                     style={{width: "100%", height: "100%"}}
-                                    cover={<img alt="Ticketac Jérémy Potel" src="../Ticketac.png"/>}
+                                    cover={<img alt="Ticketac Jérémy Potel" src={tickettac}/>}
                                 >
                                     <Meta style={{fontSize: "20px"}} title="Ticketac"
                                           description="Ticketac est le projet réalisé dans le terme d'un hackathon, en duo sur trois jours."/>
@@ -96,7 +103,7 @@ export default function Projet() {
                                 <Card
                                     hoverable
                                     style={{width: "100%", height: "100%"}}
-                                    cover={<img alt="Bikeshop Jérémy Potel" src="../Bikeshop.png"/>}
+                                    cover={<img alt="Bikeshop Jérémy Potel" src={bikeshop}/>}
                                 >
                                     <Meta style={{fontSize: "20px"}} title="Bike Shop"
                                           description="Bike Shop a été le premier projet réalisé à La Capsule."/>
@@ -110,7 +117,7 @@ export default function Projet() {
                                 <Card
                                     hoverable
                                     style={{width: "100%", height: "100%"}}
-                                    cover={<img alt="Weatherapp Jérémy Potel" src="../Weatherapp.png"/>}
+                                    cover={<img alt="Weatherapp Jérémy Potel" src={weatherapp}/>}
                                 >
                                     <Meta style={{fontSize: "20px"}} title="Weatherapp"
                                           description="Weather App permet de connaître la température d'une ville en temps réel. "/>

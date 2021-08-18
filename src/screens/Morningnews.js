@@ -1,7 +1,8 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import Sider from './Nav'
+import Sider from './Nav';
+import morningnews from '../images/Morningnews.png';
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -9,7 +10,7 @@ const {Title} = Typography;
 export default function Morningnews() {
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Sider/>
             <Layout style={{heigth: "auto"}}>
                 <Content style={{margin: '24px 16px 0'}}>
@@ -29,7 +30,7 @@ export default function Morningnews() {
                             <Col span={14}>
                                 <a href="https://morning-news69.herokuapp.com" target="_blank"
                                    rel="noopener noreferrer">
-                                    <img alt="Morningnews" src="../Morningnews.png" width="100%"/>
+                                    <img alt="Morningnews" src={morningnews} width="100%"/>
                                 </a>
                             </Col>
                             <Col offset={1} span={8}>

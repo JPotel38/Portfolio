@@ -9,7 +9,7 @@ const {Title} = Typography;
 export default function Masques() {
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Sider/>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
@@ -26,8 +26,8 @@ export default function Masques() {
                 <Row style={{marginTop: 30}}>
                     <Col span={15}>
                         <iframe src="https://player.vimeo.com/video/431216403" title="video masques.org"
-                                width="100%" height="564" frameborder="0" allow="autoplay; fullscreen"
-                                allowfullscreen/>
+                                width="100%" height="564" frameBorder="0" allow="autoplay; fullscreen"
+                                allowFullScreen/>
                     </Col>
                     <Col offset={1} span={7}>
                         <p>Masques.org est le projet final réalisé à La Caspule, en

@@ -1,7 +1,8 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import Sider from './Nav'
+import Sider from './Nav';
+import mymoviz from '../images/Mymoviz.PNG';
 
 const {Content} = Layout;
 const {Title, Text} = Typography;
@@ -9,7 +10,7 @@ const {Title, Text} = Typography;
 export default function Mymoviz() {
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Sider/>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
@@ -25,7 +26,7 @@ export default function Mymoviz() {
                 <Row style={{marginTop: 30}}>
                     <Col span={14}>
                         <a href="https://mymoviz-69.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                            <img alt="MyMoviz" src="../Mymoviz.png" width="100%" height="350"/>
+                            <img alt="MyMoviz" src={mymoviz} width="100%" height="350"/>
                         </a>
                     </Col>
                     <Col offset={1} span={8}>

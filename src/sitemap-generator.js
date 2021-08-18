@@ -8,7 +8,7 @@ require("babel-register")({
   function generateSitemap() {
       return (
         new Sitemap(router)
-            .build("http://www.jeremy-potel.fr/")
+            .build("https://jpotel38.github.io/Portfolio")
             .save("./public/sitemap.xml")
       );
   }

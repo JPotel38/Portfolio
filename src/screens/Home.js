@@ -3,8 +3,9 @@ import {Col, Layout, Progress, Row, Typography} from 'antd';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCss3Alt, faHtml5, faJs, faNodeJs, faReact} from '@fortawesome/free-brands-svg-icons';
 import Flip from 'react-reveal/Flip';
-import '../App.css';
-import Nav from './Nav'
+import Nav from './Nav';
+import photo from '../images/photo.jpg'
+import Angular from '../images/Angular.svg'
 
 const {Title, Text} = Typography;
 const {Content} = Layout;
@@ -66,7 +67,7 @@ export default function Home() {
     }, [react]);
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Nav/>
             <Content>
                 <div id="about-header">
@@ -82,7 +83,7 @@ export default function Home() {
                     <Row>
                         <Col span={4}>
                             <Flip left>
-                                <img src="../photo.jpg" alt='Jérémy Potel'
+                                <img src={photo} alt='Jérémy Potel'
                                      style={{borderRadius: "50%", width: "100%"}}/>
                             </Flip>
                         </Col>
@@ -104,7 +105,7 @@ export default function Home() {
                     </Row>
                 </div>
                 <Row style={{marginTop: "50px"}}>
-                    <Col><Title level={2}>Mes compétences en développement web</Title></Col>
+                    <Col><Title level={2}>Technologies : </Title></Col>
                 </Row>
                 <Row>
                     <Col xs={24} sm={10} md={1} offset={1}>
@@ -142,10 +143,8 @@ export default function Home() {
                             percent={css}
                             trailColor="#E5E5E5"
                         />
-
                     </Col>
                     <Col xs={24} sm={10} md={1} offset={3}>
-
                         <FontAwesomeIcon
                             icon={faJs}
                             size="8x"
@@ -164,7 +163,7 @@ export default function Home() {
 
                     </Col>
                     <Col xs={24} sm={10} md={1} offset={3}>
-                        <img src="../Angular.svg" title='Angular' alt='Angular Jérémy Potel'
+                        <img src={Angular} title='Angular' alt='Angular Jérémy Potel'
                              style={{width: '8em'}}/>
                         <Progress
                             type="circle"
@@ -175,7 +174,6 @@ export default function Home() {
                             percent={angular}
                             trailColor="#E5E5E5"
                         />
-
                     </Col>
                     <Col xs={24} sm={10} md={1} offset={3}>
                         <FontAwesomeIcon

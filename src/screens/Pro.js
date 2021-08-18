@@ -9,7 +9,7 @@ const {TabPane} = Tabs;
 export default function Pro() {
 
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Nav/>
             <Content>
                 <Row><Col span={24}><Title>Expériences professionnelles</Title></Col></Row>

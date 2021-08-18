@@ -8,6 +8,10 @@ p {
     font-size: 18px;
 }
 
+.ant-layout {
+    height: 100vh;
+}
+
 .ant-tabs-tab {
     font-size: 40px;
 }
@@ -23,6 +27,16 @@ p {
     border: none !important;
     margin: 5px;
     font-size: 20px;
+}
+
+.gameButton {
+    font-size: 20px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+
+.gameText {
+    margin-top: 15px;
 }
 
 a.ant-btn {

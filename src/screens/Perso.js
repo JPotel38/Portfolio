@@ -1,6 +1,10 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
-import Nav from './Nav'
+import Nav from './Nav';
+import KultureMania from '../images/KultureMania.jpg';
+import Futureel from '../images/Futuréel.jpg';
+import Afev from '../images/Afev.jpg';
+import NZ from '../images/NZ.jpg';
 
 const {Content} = Layout;
 const {Title, Text} = Typography;
@@ -8,7 +12,7 @@ const {Title, Text} = Typography;
 
 export default function Perso() {
     return (
-        <Layout style={{height: "100vh"}}>
+        <Layout>
             <Nav/>
             <Content>
                 <Row>
@@ -17,7 +21,7 @@ export default function Perso() {
                 <Title level={2}>KultureMania</Title>
                 <Row gutter={[16, 24]}>
                     <Col xs={0} sm={0} md={0} lg={9} xl={10}>
-                        <img alt="KultureMania Jérémy Potel" src="../KultureMania.jpg" width="100%" height="350"/>
+                        <img alt="KultureMania Jérémy Potel" src={KultureMania} width="100%" height="350"/>
                     </Col>
                     <Col xs={24} sm={24} md={8} lg={10} xl={11} offset={1}>
                         <Text><a href="https://kulturemania.blog/">KultureMania</a> est une webzine que j'ai créée
@@ -35,7 +39,7 @@ export default function Perso() {
                 <Title level={2}>Futuréel Festival</Title>
                 <Row gutter={[16, 24]}>
                     <Col xs={0} sm={0} md={0} lg={9} xl={10}>
-                        <img alt="Futuréel Jérémy Potel" src="../Futuréel.jpg" width="100%" height="350"/>
+                        <img alt="Futuréel Jérémy Potel" src={Futureel} width="100%" height="350"/>
                     </Col>
                     <Col xs={24} sm={24} md={0} lg={10} xl={11} offset={1}>
                         <Text> Le <a href="https://www.facebook.com/futureelfestival/">Futuréel Festival</a> est un
@@ -48,7 +52,7 @@ export default function Perso() {
                 <Title level={2}>Service civique à l'AFEV</Title>
                 <Row gutter={[16, 24]}>
                     <Col xs={0} sm={0} md={0} lg={9} xl={10}>
-                        <img alt="AFEV Jérémy Potel" src="../Afev.jpg" width="100%" height="350"/>
+                        <img alt="AFEV Jérémy Potel" src={Afev} width="100%" height="350"/>
                     </Col>
                     <Col xs={24} sm={24} md={8} lg={10} xl={11} offset={1}>
                         <Text> En 2016, j'ai effectué un service civique auprès de l'AFEV en tant que "Ambassadeur
@@ -61,7 +65,7 @@ export default function Perso() {
                 <Title level={2}>Programme Vacances Travail en Nouvelle-Zélande</Title>
                 <Row gutter={[16, 24]}>
                     <Col xs={0} sm={0} md={0} lg={9} xl={10}>
-                        <img alt="PVT Nouvelle-Zélande Jérémy Potel" src="../NZ.jpg" width="100%" height="350"/>
+                        <img alt="PVT Nouvelle-Zélande Jérémy Potel" src={NZ} width="100%" height="350"/>
                     </Col>
                     <Col xs={24} sm={24} md={0} lg={10} xl={11} offset={1}>
                         <Text>En 2014-2015, j'ai effectué une année de césure en Nouvelle-Zélande dans le cadre du

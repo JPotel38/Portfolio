@@ -19,13 +19,11 @@ import Pendu from './screens/Pendu'
 import Pingpong from './screens/Pingpong'
 import NotFound from './screens/NotFound'
 
-
 export default function App() {
     return (
-
         <Router>
             <Switch>
-                <Route path="/" exact component={Home}/>
+                <Route exact path="/Portfolio" component={Home}/>
                 <Route path="/education" component={Education}/>
                 <Route path="/pro" component={Pro}/>
                 <Route path="/perso" component={Perso}/>
