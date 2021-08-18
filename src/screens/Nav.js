@@ -25,15 +25,6 @@ export default function Nav() {
                 </Menu.Item>
                 <Menu.Item key="5"><Link to='/game'>Game Zone</Link>
                 </Menu.Item>
-                <Menu.Item key="6">
-                    <GithubFilled id="github-icon"/>
-                    <a href="https://github.com/JPotel38" target="_blank" rel="noopener noreferrer">Github</a>
-                </Menu.Item>
-                <Menu.Item key="7">
-                    <LinkedinFilled id="linkedin-icon"/>
-                    <a href="https://www.linkedin.com/in/jérémy-potel/" target="_blank" rel="noopener noreferrer">
-                        LinkedIn</a>
-                </Menu.Item>
             </Menu>
         </Header>
     );

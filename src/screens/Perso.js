@@ -13,7 +13,6 @@ const {Title, Text} = Typography;
 export default function Perso() {
     return (
         <Layout>
-            <Nav/>
             <Content>
                 <Row>
                     <Title>Projets personnels</Title>

@@ -10,7 +10,6 @@ export default function Pro() {
 
     return (
         <Layout>
-            <Nav/>
             <Content>
                 <Row><Col span={24}><Title>Expériences professionnelles</Title></Col></Row>
                 <Row>

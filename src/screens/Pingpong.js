@@ -90,7 +90,6 @@ export default function Pingpong() {
     }
     return (
         <Layout>
-            <Nav/>
                 <Content>
                         <Row>
                             <Col span={24}>

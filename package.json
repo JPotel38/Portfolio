@@ -29,8 +29,6 @@
     "surge": "^0.21.6"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "sitemap": "babel-node ./src/sitemap-generator.js",
     "build": "react-scripts build",

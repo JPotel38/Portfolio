@@ -182,7 +182,6 @@ export default function Pendu() {
     if (valid) {
         return (
             <Layout>
-                <Nav/>
                 <Content style={{margin: '24px 16px 0'}}>
                     <Row>
                         <Col>

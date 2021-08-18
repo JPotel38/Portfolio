@@ -13,7 +13,6 @@ export default function Game() {
 
     return (
         <Layout>
-            <Nav/>
             <Content>
                 <Row>
                     <Col span={24}>

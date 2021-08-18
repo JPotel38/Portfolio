@@ -10,7 +10,6 @@ export default function NotFound() {
 
     return (
         <Layout>
-            <Nav/>
             <Content>
                 <Row>
                     <Col span={24}>

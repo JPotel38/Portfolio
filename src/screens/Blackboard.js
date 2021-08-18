@@ -11,7 +11,6 @@ export default function Blackboard() {
 
     return (
         <Layout>
-            <Sider/>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
                     <Col span={6}>

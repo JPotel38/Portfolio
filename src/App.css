@@ -14,34 +14,6 @@
     --text-shadow: rgb(0, 208, 255);
 }
 
-@keyframes hovering-button {
-    0% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-    25% {
-        background-color: yellow;
-        left: 200px;
-        top: 0px;
-    }
-    50% {
-        background-color: blue;
-        left: 200px;
-        top: 200px;
-    }
-    75% {
-        background-color: green;
-        left: 0px;
-        top: 200px;
-    }
-    100% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-}
-
 * {
     font-family: 'Open Sans', sans-serif;
 }
@@ -52,6 +24,7 @@ p {
 
 .ant-layout {
     height: 100vh;
+    background-color: transparent;
 }
 
 .ant-tabs-tab {
@@ -90,7 +63,7 @@ a.ant-btn {
     margin-bottom: 64px !important;
 }
 
-.ant-layout-header {
+.ant-layout-header, #footer {
     background: var(--dark-blue);
     height: auto;
 }
@@ -122,12 +95,19 @@ a.ant-btn {
     border-color: var(--pink);
 }
 
-.ant-menu-horizontal > .ant-menu-item a{
+.ant-menu-horizontal > .ant-menu-item a {
     color: var(--dark-green);;
 }
 
 .ant-menu-submenu-selected::after {
     border-bottom: none;
+}
+
+#picture {
+    border-radius: 50%;
+    width: 50%;
+    box-shadow:
+            0 0 60px 30px var(--pink)
 }
 
 #github-icon {

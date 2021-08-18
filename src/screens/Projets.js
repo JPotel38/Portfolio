@@ -19,7 +19,6 @@ export default function Projets() {
 
     return (
         <Layout>
-            <Sider/>
             <Content>
                 <Row>
                     <Col span={24}>

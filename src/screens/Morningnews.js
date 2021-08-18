@@ -11,7 +11,6 @@ export default function Morningnews() {
 
     return (
         <Layout>
-            <Sider/>
             <Layout style={{heigth: "auto"}}>
                 <Content style={{margin: '24px 16px 0'}}>
                     <div className="site-layout-background" style={{padding: 24, minHeight: 360}}>

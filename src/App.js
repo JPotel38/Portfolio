@@ -18,28 +18,34 @@ import Bikeshop from './screens/Bikeshop'
 import Pendu from './screens/Pendu'
 import Pingpong from './screens/Pingpong'
 import NotFound from './screens/NotFound'
+import Nav from "./screens/Nav";
+import MyFooter from "./screens/Footer";
 
 export default function App() {
     return (
         <Router>
-            <Switch>
-                <Route exact path="/Portfolio" component={Home}/>
-                <Route path="/education" component={Education}/>
-                <Route path="/pro" component={Pro}/>
-                <Route path="/perso" component={Perso}/>
-                <Route path="/projets" component={Projets}/>
-                <Route path="/game" component={GameZone}/>
-                <Route path="/masques" component={Masques}/>
-                <Route path="/morningnews" component={Morningnews}/>
-                <Route path="/ticketac" component={Ticketac}/>
-                <Route path="/blackboard" component={Blackboard}/>
-                <Route path="/mymoviz" component={Mymoviz}/>
-                <Route path="/weatherapp" component={Weatherapp}/>
-                <Route path="/bikeshop" component={Bikeshop}/>
-                <Route path="/pendu" component={Pendu}/>
-                <Route path="/pingpong" component={Pingpong}/>
-                <Route component={NotFound}/>
-            </Switch>
+            <div>
+                <Nav/>
+                <Switch>
+                    <Route path="/Portfolio" exact component={Home}/>
+                    <Route path="/education" component={Education}/>
+                    <Route path="/pro" component={Pro}/>
+                    <Route path="/perso" component={Perso}/>
+                    <Route path="/projets" component={Projets}/>
+                    <Route path="/game" component={GameZone}/>
+                    <Route path="/masques" component={Masques}/>
+                    <Route path="/morningnews" component={Morningnews}/>
+                    <Route path="/ticketac" component={Ticketac}/>
+                    <Route path="/blackboard" component={Blackboard}/>
+                    <Route path="/mymoviz" component={Mymoviz}/>
+                    <Route path="/weatherapp" component={Weatherapp}/>
+                    <Route path="/bikeshop" component={Bikeshop}/>
+                    <Route path="/pendu" component={Pendu}/>
+                    <Route path="/pingpong" component={Pingpong}/>
+                    <Route component={NotFound}/>
+                </Switch>
+                <MyFooter/>
+            </div>
         </Router>
     );
 }
