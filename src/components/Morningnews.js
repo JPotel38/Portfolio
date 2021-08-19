@@ -1,7 +1,6 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import Sider from './Nav';
 import morningnews from '../images/Morningnews.png';
 
 const {Content} = Layout;

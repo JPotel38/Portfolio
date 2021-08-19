@@ -2,7 +2,6 @@ import React from 'react'
 import {Button, Col, Layout, Row, Typography} from 'antd';
 import {Link} from 'react-router-dom';
 import {FrownOutlined} from '@ant-design/icons';
-import Nav from './Nav';
 import apple from '../images/apple.png';
 import golf from '../images/golf.png'
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import Sider from './Nav';
 import blackboard from '../images/BlackBoard.PNG';
 
 const {Content} = Layout;

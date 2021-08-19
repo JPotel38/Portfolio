@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {Col, Layout, Modal, Row, Typography} from 'antd';
-import Nav from './Nav';
 import {Circle, Layer, Stage} from 'react-konva';
 import '../App.css';
 
