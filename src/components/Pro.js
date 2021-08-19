@@ -8,7 +8,7 @@ const {TabPane} = Tabs;
 export default function Pro() {
 
     return (
-        <Content>
+        <div id="pro">
             <Row><Col span={24}><Title>Expériences professionnelles</Title></Col></Row>
             <Row>
                 <Tabs defaultActiveKey="1" centered size="large" keyboard tabBarGutter={400}>
@@ -73,6 +73,6 @@ export default function Pro() {
                     </TabPane>
                 </Tabs>
             </Row>
-        </Content>
+        </div>
     )
 }

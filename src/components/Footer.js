@@ -9,7 +9,15 @@ export default function MyFooter() {
     return (
         <Footer id='footer'>
             <Row>
-                <Col offset={12} span={12}>
+                <Col>
+                    <address>
+                        <a href="mailto:potel.jeremy@gmail.com">potel.jeremy@gmail.com</a>
+                    </address>
+                </Col>
+                <Col>
+                    <p>+33782736832</p>
+                </Col>
+                <Col span={12}>
                 <GithubFilled id="github-icon"/>
                 <a href="https://github.com/JPotel38" target="_blank" rel="noopener noreferrer">Github</a>
                 <LinkedinFilled id="linkedin-icon"/>

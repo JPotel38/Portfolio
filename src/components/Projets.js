@@ -14,10 +14,10 @@ const {Content} = Layout;
 const {Title} = Typography;
 const {Meta} = Card;
 
-export default function Projet() {
+export default function Projets() {
 
     return (
-        <Content>
+        <div id="projets">
             <Row>
                 <Col span={24}>
                     <Title>Projets</Title>
@@ -123,6 +123,6 @@ export default function Projet() {
                     </Fade>
                 </Col>
             </Row>
-        </Content>
+        </div>
     )
 }

@@ -88,7 +88,6 @@ export default function Pingpong() {
             break;
     }
     return (
-        <Layout>
                 <Content>
                         <Row>
                             <Col span={24}>
@@ -175,6 +174,5 @@ export default function Pingpong() {
                             </Col>
                         </Row>
                 </Content>
-        </Layout>
     )
 }

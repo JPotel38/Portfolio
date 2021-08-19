@@ -9,7 +9,6 @@ const {Title, Text} = Typography;
 export default function Ticketac() {
 
     return (
-        <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
                     <Col span={6}>
@@ -38,6 +37,5 @@ export default function Ticketac() {
                     </Col>
                 </Row>
             </Content>
-        </Layout>
     )
 }

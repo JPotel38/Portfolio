@@ -11,7 +11,7 @@ const {Title, Text} = Typography;
 
 export default function Perso() {
     return (
-        <Content>
+        <div id="perso">
             <Row>
                 <Title>Projets personnels</Title>
             </Row>
@@ -77,6 +77,6 @@ export default function Perso() {
                     <p>Bonus: I speak english/ Hablo espanol !</p>
                 </Col>
             </Row>
-        </Content>
+        </div>
     )
 }

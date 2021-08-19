@@ -9,7 +9,6 @@ const {Title} = Typography;
 export default function Bikeshop() {
 
     return (
-        <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
                     <Col span={6}>
@@ -33,6 +32,5 @@ export default function Bikeshop() {
                     </Col>
                 </Row>
             </Content>
-        </Layout>
     )
 }

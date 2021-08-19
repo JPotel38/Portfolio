@@ -9,7 +9,6 @@ const {Title} = Typography;
 export default function Blackboard() {
 
     return (
-        <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
                     <Col span={6}>
@@ -37,6 +36,5 @@ export default function Blackboard() {
                     </Col>
                 </Row>
             </Content>
-        </Layout>
     )
 }

@@ -11,7 +11,6 @@ const {Title} = Typography;
 export default function Game() {
 
     return (
-        <Layout>
             <Content>
                 <Row>
                     <Col span={24}>
@@ -43,6 +42,5 @@ export default function Game() {
                     </Col>
                 </Row>
             </Content>
-        </Layout>
     )
 }

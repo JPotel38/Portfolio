@@ -127,12 +127,13 @@ export default function Education() {
     }
 
     return (
-        <Content>
+        <div id="education">
             <Row>
                 <Col span={24}>
                     <Title>Education</Title>
                 </Col>
-            </Row> <Row>
+            </Row>
+            <Row>
             <Timeline mode={"left"}>
                 <Timeline.Item label="2021"><p>Alternance à School By Hi!t,
                     Lyon.</p><Button style={{marginLeft: 5}}
@@ -155,6 +156,6 @@ export default function Education() {
                 {details}
             </Modal>
         </Row>
-        </Content>
+        </div>
     )
 }

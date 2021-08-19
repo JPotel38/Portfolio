@@ -2,11 +2,12 @@
 
 :root {
     --red: #ff124f;
-    --purple: #7700a6;
+    --purple: #7a04eb;
     --blue: #00b3fe;
     --yellow: #defe47;
-    --dark-blue: #01012b;
-    --pink: #ff2a6d;
+    --dark-blue: #120458;
+    --pink: #ff00a0;
+    --light-pink: #fe75fe;
     --black: #000c17;
     --white: #E5E5E5;
     --light-green: #d1f7ff;
@@ -20,11 +21,6 @@
 
 p, a {
     font-size: 16px;
-}
-
-.ant-layout {
-    height: 100vh;
-    background-color: transparent;
 }
 
 .ant-tabs-tab {
@@ -64,21 +60,25 @@ a.ant-btn {
 }
 
 .ant-layout-header, #footer {
-    background: var(--dark-blue);
+    background: var(--purple);
     height: 63px;
 }
 
-.ant-menu {
+.ant-layout {
     background: var(--dark-blue);
+}
+
+.ant-menu {
+    background: var(--purple);
 }
 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
     border-bottom: none;
-    background: var(--dark-blue);
+    background: var(--purple);
 }
 
 .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
-    background: var(--dark-blue);
+    background: var(--purple);
 }
 
 .ant-menu-horizontal > .ant-menu-item a:hover {

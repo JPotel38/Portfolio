@@ -9,8 +9,6 @@ const {Title} = Typography;
 export default function Morningnews() {
 
     return (
-        <Layout>
-            <Layout style={{heigth: "auto"}}>
                 <Content style={{margin: '24px 16px 0'}}>
                     <div className="site-layout-background" style={{padding: 24, minHeight: 360}}>
                         <Row>
@@ -41,7 +39,5 @@ export default function Morningnews() {
                         </Row>
                     </div>
                 </Content>
-            </Layout>
-        </Layout>
     )
 }
