@@ -1,14 +1,15 @@
 @import '~antd/dist/antd.css';
 
 :root {
-    --red: #ff124f;
+    --red: #de004e;
+    --dark-red: #860029;
     --purple: #7a04eb;
     --blue: #00b3fe;
     --yellow: #defe47;
-    --dark-blue: #120458;
+    --dark-blue: #321450;
     --pink: #ff00a0;
-    --light-pink: #fe75fe;
-    --black: #000c17;
+    --light-pink: #f887ff;
+    --black: #29132e;
     --white: #E5E5E5;
     --light-green: #d1f7ff;
     --dark-green: #005678;
@@ -21,10 +22,25 @@
 
 p, a {
     font-size: 16px;
+    color: var(--red);
+}
+
+h1.ant-typography, h2.ant-typography, h3.ant-typography, h4.ant-typography {
+    color: var(--red);
+    margin: 50px;
 }
 
 .ant-tabs-tab {
     font-size: 40px;
+}
+
+.ant-card {
+    width: 75%;
+    height: 75%;
+}
+
+.ant-card:hover {
+    transform: scale(1.3);
 }
 
 .button {
@@ -36,14 +52,9 @@ p, a {
     font-size: 20px;
 }
 
-.gameButton {
-    font-size: 20px;
-    height: 40px;
-    background-color: var(--white);
-}
-
-.gameText {
-    margin-top: 15px;
+.ant-progress-inner {
+    width: 1200px;
+    height: 1200px;
 }
 
 .ant-tabs-tab {
@@ -60,7 +71,7 @@ a.ant-btn {
 }
 
 .ant-layout-header, #footer {
-    background: var(--purple);
+    background: var(--black);
     height: 63px;
 }
 
@@ -69,33 +80,33 @@ a.ant-btn {
 }
 
 .ant-menu {
-    background: var(--purple);
+    background: var(--black);
 }
 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
     border-bottom: none;
-    background: var(--purple);
+    background: var(--black);
 }
 
 .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
-    background: var(--purple);
+    background: var(--black);
 }
 
 .ant-menu-horizontal > .ant-menu-item a:hover {
-    color: var(--light-green);
+    color: var(--red);
 }
 
 .ant-menu-title-content {
-    color: var(--dark-green);
+    color: var(--dark-red);
 }
 
 .ant-menu-title-content:hover {
     border-style: solid;
-    border-color: var(--pink);
+    border-color: var(--red);
 }
 
 .ant-menu-horizontal > .ant-menu-item a {
-    color: var(--dark-green);;
+    color: var(--dark-red);;
 }
 
 .ant-menu-submenu-selected::after {
@@ -105,8 +116,7 @@ a.ant-btn {
 #picture {
     border-radius: 50%;
     width: 50%;
-    box-shadow:
-            0 0 60px 30px var(--pink)
+    box-shadow: 0 0 60px 30px var(--dark-red)
 }
 
 #presentation {

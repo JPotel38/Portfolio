@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Col, Collapse, Row, Typography, Layout} from 'antd';
 import photo from '../images/photo.jpg';
 import Flash from 'react-reveal/Flash';
@@ -13,6 +13,18 @@ const {Title} = Typography;
 const {Panel} = Collapse;
 
 export default function Home() {
+    const [prez, setPrez] = useState('');
+
+    useEffect(() => {
+        let i = 0;
+        setPrez('Développeur web Fullstack');
+        let txt;
+        if (i < prez.length) {
+            txt += prez.charAt(i);
+            i++;
+            setTimeout(50);
+        }
+    }, [])
 
     return (
         <Layout>
@@ -23,23 +35,10 @@ export default function Home() {
                     </Flash>
                 </Col>
             </Row>
-            <Row>
-                <Col offset={10} span={4}>
+            <Row style={{textAlign: 'center'}}>
+                <Col offset={9} span={4}>
                     <Title level={3}> Jérémy Potel</Title>
-                    <Title level={4}>Développeur web Fullstack junior</Title>
-                </Col>
-            </Row>
-            <Row id='presentation'>
-                <Col span={16} offset={4}>
-                    <p>Gravitant dans l'univers du développement informatique depuis 2019 à
-                        travers l'apprentissage du COBOL,
-                        je viens d'achever une alternance avec
-                        <a href="http://www.school-by-hiit.fr/"> School By Hi!t</a>, chez <a
-                            href="https://www.energy-pool.eu/fr/">Energy Pool</a> en tant que
-                        développeur
-                        fullstack <strong>Java</strong>/ <strong>Angular</strong>, après mon passage
-                        à <a
-                            href="https://www.lacapsule.academy/fr/">La Capsule Academy</a> en 2020.</p>
+                    <Title level={4}>Développeur web Fullstack</Title>
                 </Col>
             </Row>
             <Skills/>

@@ -9,12 +9,12 @@ export default function MyFooter() {
     return (
         <Footer id='footer'>
             <Row>
-                <Col>
+                <Col span={4}>
                     <address>
                         <a href="mailto:potel.jeremy@gmail.com">potel.jeremy@gmail.com</a>
                     </address>
                 </Col>
-                <Col>
+                <Col span={4}>
                     <p>+33782736832</p>
                 </Col>
                 <Col span={12}>

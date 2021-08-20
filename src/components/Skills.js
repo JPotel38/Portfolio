@@ -63,7 +63,7 @@ export default function Skills() {
 
     return (
         <div>
-            <Row style={{marginTop: "50px"}}>
+            <Row>
                 <Col><Title level={2}>Technologies : </Title></Col>
             </Row>
             <Row>

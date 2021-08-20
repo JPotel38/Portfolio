@@ -12,6 +12,19 @@ const {Title, Text} = Typography;
 export default function Perso() {
     return (
         <div id="perso">
+            <Row id='presentation'>
+                <Col span={16} offset={4}>
+                    <p>Gravitant dans l'univers du développement informatique depuis 2019 à
+                        travers l'apprentissage du COBOL,
+                        je viens d'achever une alternance avec
+                        <a href="http://www.school-by-hiit.fr/"> School By Hi!t</a>, chez <a
+                            href="https://www.energy-pool.eu/fr/">Energy Pool</a> en tant que
+                        développeur
+                        fullstack <strong>Java</strong>/ <strong>Angular</strong>, après mon passage
+                        à <a
+                            href="https://www.lacapsule.academy/fr/">La Capsule Academy</a> en 2020.</p>
+                </Col>
+            </Row>
             <Row>
                 <Title>Projets personnels</Title>
             </Row>
