@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react'
-import {Col, Collapse, Row, Typography, Layout} from 'antd';
+import React, {useState} from 'react'
+import {Col, Collapse, Layout, Row, Typography} from 'antd';
 import photo from '../images/photo.jpg';
 import Flash from 'react-reveal/Flash';
 import Skills from "./Skills";
@@ -8,23 +8,13 @@ import Pro from "./Pro";
 import Education from "./Education";
 import Perso from "./Perso";
 import MyFooter from "./Footer";
+import Typewriter from "typewriter-effect";
 
 const {Title} = Typography;
 const {Panel} = Collapse;
 
 export default function Home() {
     const [prez, setPrez] = useState('');
-
-    useEffect(() => {
-        let i = 0;
-        setPrez('Développeur web Fullstack');
-        let txt;
-        if (i < prez.length) {
-            txt += prez.charAt(i);
-            i++;
-            setTimeout(50);
-        }
-    }, [])
 
     return (
         <Layout>
@@ -37,8 +27,33 @@ export default function Home() {
             </Row>
             <Row style={{textAlign: 'center'}}>
                 <Col offset={9} span={4}>
-                    <Title level={3}> Jérémy Potel</Title>
-                    <Title level={4}>Développeur web Fullstack</Title>
+                    <Title level={3}>
+                        <Typewriter
+                            options={{
+                                cursor: ' '
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter.typeString('Jérémy Potel')
+                                    .start()
+                            }}
+                        />
+                    </Title>
+                </Col>
+            </Row>
+            <Row style={{textAlign: 'center'}}>
+                <Col offset={8} span={6}>
+                    <Title level={4}>
+                        <Typewriter
+                            options={{
+                                cursor: ' '
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter.pauseFor(2500)
+                                    .typeString('Développeur full stack')
+                                    .start();
+                            }}
+                        />
+                    </Title>
                 </Col>
             </Row>
             <Skills/>

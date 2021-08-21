@@ -27,7 +27,8 @@
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "^4.0.3",
     "sitemap-generator": "^7.5.2",
-    "surge": "^0.21.6"
+    "surge": "^0.21.6",
+    "typewriter-effect": "^2.18.0"
   },
   "scripts": {
     "start": "react-scripts start",
