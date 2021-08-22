@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import {Button, Col, Layout, Modal, Row, Timeline, Typography} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 
-const {Content} = Layout;
 const {Title} = Typography;
 
 export default function Education() {

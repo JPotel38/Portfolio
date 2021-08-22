@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import {Col, Collapse, Layout, Row, Typography} from 'antd';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import Home from './components/Home'
@@ -17,6 +16,7 @@ import Weatherapp from "./components/Weatherapp";
 import Bikeshop from "./components/Bikeshop";
 import NotFound from "./components/NotFound";
 import Projets from "./components/Projets";
+import Pokedex from "./components/Pokedex";
 
 export default function App() {
 
@@ -36,6 +36,7 @@ export default function App() {
                 <Route path="/mymoviz" component={Mymoviz}/>
                 <Route path="/weatherapp" component={Weatherapp}/>
                 <Route path="/bikeshop" component={Bikeshop}/>
+                <Route path="/pokedex" component={Pokedex}/>
                 <Route component={NotFound}/>
             </Switch>
         </Router>

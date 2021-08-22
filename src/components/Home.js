@@ -14,12 +14,10 @@ const {Title} = Typography;
 const {Panel} = Collapse;
 
 export default function Home() {
-    const [prez, setPrez] = useState('');
-
     return (
         <Layout>
             <Row>
-                <Col offset={10} span={4}>
+                <Col offset={11} span={4}>
                     <Flash>
                         <img id='picture' src={photo} alt='Jérémy Potel'/>
                     </Flash>

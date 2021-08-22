@@ -9,6 +9,7 @@ import tickettac from '../images/Ticketac.PNG'
 import weatherapp from '../images/Weatherapp.PNG'
 import bikeshop from '../images/Bikeshop.PNG'
 import blackboard from '../images/BlackBoard.PNG'
+import pokedex from '../images/pokedex.png'
 
 const {Title} = Typography;
 const {Meta} = Card;
@@ -103,6 +104,23 @@ export default function Projets() {
                                 cover={<img alt="Weatherapp Jérémy Potel" src={weatherapp}/>}
                             >
                                 <Meta title="Weatherapp"/>
+                            </Card>
+                        </Link>
+                    </Fade>
+                </Col>
+            </Row>
+            <Row>
+                <Title level={4}>Projets en cours</Title>
+            </Row>
+            <Row>
+                <Col offset={8} span={8}>
+                    <Fade left>
+                        <Link to="/pokedex">
+                            <Card
+                                hoverable
+                                cover={<img alt="Pokedex Jérémy Potel" src={pokedex}/>}
+                            >
+                                <Meta title="Pokedex"/>
                             </Card>
                         </Link>
                     </Fade>
