@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Home from './components/Home'
 import Nav from "./components/Nav";
@@ -17,6 +17,7 @@ import Bikeshop from "./components/Bikeshop";
 import NotFound from "./components/NotFound";
 import Projets from "./components/Projets";
 import Pokedex from "./components/Pokedex";
+import Contact from "./components/Contact";
 
 export default function App() {
 
@@ -37,6 +38,7 @@ export default function App() {
                 <Route path="/weatherapp" component={Weatherapp}/>
                 <Route path="/bikeshop" component={Bikeshop}/>
                 <Route path="/pokedex" component={Pokedex}/>
+                <Route path="/contact" component={Contact}/>
                 <Route component={NotFound}/>
             </Switch>
         </Router>

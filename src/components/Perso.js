@@ -1,17 +1,16 @@
 import React from 'react'
-import {Col, Layout, Row, Typography} from 'antd';
+import {Col, Row, Typography} from 'antd';
 import KultureMania from '../images/KultureMania.jpg';
 import Futureel from '../images/Futuréel.jpg';
 import Afev from '../images/Afev.jpg';
 import NZ from '../images/NZ.jpg';
 
-const {Content} = Layout;
 const {Title, Text} = Typography;
 
 
 export default function Perso() {
     return (
-        <div id="perso">
+        <div>
             <Row id='presentation'>
                 <Col span={16} offset={4}>
                     <p>Gravitant dans l'univers du développement informatique depuis 2019 à

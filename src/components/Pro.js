@@ -1,7 +1,6 @@
 import React from 'react'
-import {Col, Layout, Row, Tabs, Typography} from 'antd';
+import {Col, Row, Tabs, Typography} from 'antd';
 
-const {Content} = Layout;
 const {Title, Text} = Typography
 const {TabPane} = Tabs;
 

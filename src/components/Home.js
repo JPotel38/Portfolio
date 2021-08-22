@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Col, Collapse, Layout, Row, Typography} from 'antd';
 import photo from '../images/photo.jpg';
 import Flash from 'react-reveal/Flash';
@@ -7,8 +7,8 @@ import Projets from "./Projets";
 import Pro from "./Pro";
 import Education from "./Education";
 import Perso from "./Perso";
-import MyFooter from "./Footer";
 import Typewriter from "typewriter-effect";
+import Contact from "./Contact";
 
 const {Title} = Typography;
 const {Panel} = Collapse;
@@ -59,11 +59,11 @@ export default function Home() {
             <Pro/>
             <Education/>
             <Collapse>
-                <Panel header="About Me" key="1">
+                <Panel header="About Me" key="1" id="perso">
                     <Perso/>
                 </Panel>
             </Collapse>
-            <MyFooter/>
+            <Contact/>
         </Layout>
     )
 }
