@@ -17,6 +17,7 @@ import Bikeshop from "./components/Bikeshop";
 import NotFound from "./components/NotFound";
 import Projets from "./components/Projets";
 import Pokedex from "./components/Pokedex";
+import RPG from "./components/RPG";
 import Contact from "./components/Contact";
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
                 <Route path="/weatherapp" component={Weatherapp}/>
                 <Route path="/bikeshop" component={Bikeshop}/>
                 <Route path="/pokedex" component={Pokedex}/>
+                <Route path="/rpg" component={RPG}/>
                 <Route path="/contact" component={Contact}/>
                 <Route component={NotFound}/>
             </Switch>

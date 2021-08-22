@@ -9,7 +9,8 @@ import tickettac from '../images/Ticketac.PNG'
 import weatherapp from '../images/Weatherapp.PNG'
 import bikeshop from '../images/Bikeshop.PNG'
 import blackboard from '../images/BlackBoard.PNG'
-import pokedex from '../images/pokedex.png'
+import pokedex from '../images/Pokedex.png'
+import WimgmHome from '../images/WimgmHome.png'
 
 const {Title} = Typography;
 const {Meta} = Card;
@@ -37,7 +38,7 @@ export default function Projets() {
                     </Fade>
                 </Col>
                 <Col span={6}>
-                    <Fade bottom>
+                    <Fade top>
                         <Link to="/morningnews">
                             <Card
                                 hoverable
@@ -113,7 +114,7 @@ export default function Projets() {
                 <Title level={4}>Projets en cours</Title>
             </Row>
             <Row>
-                <Col offset={8} span={8}>
+                <Col offset={4} span={8}>
                     <Fade left>
                         <Link to="/pokedex">
                             <Card
@@ -121,6 +122,18 @@ export default function Projets() {
                                 cover={<img alt="Pokedex Jérémy Potel" src={pokedex}/>}
                             >
                                 <Meta title="Pokedex"/>
+                            </Card>
+                        </Link>
+                    </Fade>
+                </Col>
+                <Col span={8}>
+                    <Fade right>
+                        <Link to="/rpg">
+                            <Card
+                                hoverable
+                                cover={<img alt="WhereIsMyGM Jérémy Potel" src={WimgmHome}/>}
+                            >
+                                <Meta title="WhereIsMyGM"/>
                             </Card>
                         </Link>
                     </Fade>

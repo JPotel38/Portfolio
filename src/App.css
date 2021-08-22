@@ -25,9 +25,14 @@ p, a {
     color: var(--red);
 }
 
-h1.ant-typography, h2.ant-typography, h3.ant-typography, h4.ant-typography {
+h1.ant-typography, h2.ant-typography{
     color: var(--red);
     margin: 50px;
+}
+
+h3.ant-typography, h4.ant-typography {
+    color: var(--red);
+    margin: 10px;
 }
 
 .ant-tabs-tab {
@@ -115,6 +120,7 @@ a.ant-btn {
 
 #picture {
     border-radius: 50%;
+    margin-top: 25px;
     width: 50%;
     box-shadow: 0 0 60px 30px var(--dark-red)
 }

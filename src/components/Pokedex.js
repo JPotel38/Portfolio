@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import pokemon from '../images/pokemon.png';
+import pokemon from '../images/Pokemon.png';
 
 const {Content} = Layout;
 const {Title, Text} = Typography;
