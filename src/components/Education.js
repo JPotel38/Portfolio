@@ -9,48 +9,40 @@ export default function Education() {
     const [details, setDetails] = useState(null)
     const [isModalVisible, setIsModalVisible] = useState(false);
 
-    const handleOk = () => {
-        setIsModalVisible(false);
-    };
-
-    const handleCancel = () => {
-        setIsModalVisible(false);
-    };
-
     const schoolByHiit = () => {
         setIsModalVisible(true);
         setDetails(<p>Douze semaines de cours centrées sur Java et Angular. Réalisation de TP hebdomadaires.
             Projet fil rouge final en deux semaines intensives : création d'une plate-forme pour les promos suivantes.
-            <h2>Technologies:</h2>
+            <Title level={2}>Technologies:</Title>
             <Row>
                 <Col span={8}>
-                    <h4>Front-end :</h4>
+                    <Title level={4}>Front-end :</Title>
                     <ul>
                         <li><strong>Angular</strong></li>
                     </ul>
                 </Col>
                 <Col span={8}>
-                    <h4>Design et responsive :</h4>
+                    <Title level={4}>Design et responsive :</Title>
                     <ul>
                         <li><strong>Ionic</strong></li>
                     </ul>
                 </Col>
                 <Col span={8}>
-                    <h4>Back-end :</h4>
+                    <Title level={4}>Back-end :</Title>
                     <ul>
                         <li><strong>Java</strong></li>
                         <li><strong>Spring</strong></li>
                     </ul>
                 </Col>
                 <Col span={8}>
-                    <h4>Base de données:</h4>
+                    <Title level={4}>Base de données:</Title>
                     <ul>
                         <li><strong>MySql</strong></li>
                         <li><strong>Hibernate</strong></li>
                     </ul>
                 </Col>
                 <Col span={8}>
-                    <h4>Outils:</h4>
+                    <Title level={4}>Outils:</Title>
                     <ul>
                         <li><strong>Docker</strong></li>
                         <li><strong>Kubernetes</strong></li>
@@ -58,7 +50,7 @@ export default function Education() {
                     </ul>
                 </Col>
                 <Col span={8}>
-                    <h4>Cloud:</h4>
+                    <Title level={4}>Cloud:</Title>
                     <ul>
                         <li><strong>Amazon Web Service</strong></li>
                     </ul>
@@ -71,10 +63,10 @@ export default function Education() {
         setIsModalVisible(true);
         setDetails(<p>Bootcamp de onze semaines React/ React Native/ NodeJS/ MongoDB. Réalisation de projets
             hebdomadaires et d'un projet final en intensif.
-            <h2>Technologies:</h2>
+            <Title level={2}>Technologies:</Title>
             <Row>
                 <Col span={8}>
-                    <h4>Front-end :</h4>
+                    <Title level={4}>Front-end :</Title>
                     <ul>
                         <li><strong>HTML</strong></li>
                         <li><strong>CSS</strong></li>
@@ -84,14 +76,14 @@ export default function Education() {
                     </ul>
                 </Col>
                 <Col span={8}>
-                    <h4>Back-end :</h4>
+                    <Title level={4}>Back-end :</Title>
                     <ul>
                         <li><strong>Node.JS</strong></li>
                         <li><strong>Express</strong></li>
                     </ul>
                 </Col>
                 <Col span={8}>
-                    <h4>Design et responsive :</h4>
+                    <Title level={4}>Design et responsive :</Title>
                     <ul>
                         <li><strong>Bootstrap</strong></li>
                         <li><strong>Reactstrap</strong></li>
@@ -150,8 +142,13 @@ export default function Education() {
                         2.</p></Timeline.Item>
                 </Timeline>
                 <Modal visible={isModalVisible}
-                       onOk={handleOk}
-                       onCancel={handleCancel}>
+                       footer={[
+                           <Button key="back" onClick={() => {
+                               setIsModalVisible(false);
+                           }}>
+                               Return
+                           </Button>
+                       ]}>
                     {details}
                 </Modal>
             </Row>

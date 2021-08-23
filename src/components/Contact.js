@@ -1,24 +1,18 @@
 import React, {useState} from "react";
-import {Button, Col, Form, Input, message, Row, Typography} from 'antd';
+import {Button, Col, Form, Input, message, Row, Tooltip, Typography} from 'antd';
 import * as emailjs from 'emailjs-com';
 import {init} from 'emailjs-com';
+
+const {Title} = Typography;
+
+require('dotenv').config()
+init(process.env.REACT_APP_EMAILJS_USERID);
 
 const success = () => {
     message.success('Message envoyé');
 };
 
-const error = () => {
-    message.error('This is an error message');
-};
-
-const {Title} = Typography;
-
-require('dotenv').config()
-
-init(process.env.REACT_APP_EMAILJS_USERID);
-
 export default function Contact() {
-    console.log(process.env);
     const [name, setName] = useState("");
     const [company, setCompany] = useState("");
     const [phone, setPhone] = useState("");
@@ -49,11 +43,6 @@ export default function Contact() {
                 {
                     success()
                 }
-            }, function (error) {
-                console.log('FAILED...', error);
-                {
-                    error()
-                }
             });
     };
 
@@ -61,10 +50,12 @@ export default function Contact() {
         <div id="contact">
             <Title>Contact</Title>
             <Row>
-                <Col offset={8} span={16}>
-                    <address>
-                        <a href="mailto:potel.jeremy@gmail.com">potel.jeremy@gmail.com</a>
-                    </address>
+                <Col offset={8} span={4}>
+                    <Tooltip title="Write to me !">
+                        <address>
+                            <a href="mailto:potel.jeremy@gmail.com">potel.jeremy@gmail.com</a>
+                        </address>
+                    </Tooltip>
                     <p>+33782736832</p>
                 </Col>
             </Row>

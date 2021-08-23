@@ -24,7 +24,7 @@ export default function Home() {
                 </Col>
             </Row>
             <Row style={{textAlign: 'center'}}>
-                <Col offset={9} span={4}>
+                <Col offset={6} span={10}>
                     <Title level={3}>
                         <Typewriter
                             options={{
@@ -39,7 +39,7 @@ export default function Home() {
                 </Col>
             </Row>
             <Row style={{textAlign: 'center'}}>
-                <Col offset={8} span={6}>
+                <Col offset={6} span={10}>
                     <Title level={4}>
                         <Typewriter
                             options={{

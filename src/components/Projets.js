@@ -24,7 +24,7 @@ export default function Projets() {
                     <Title>Projets</Title>
                 </Col>
             </Row>
-            <Row gutter={[8, 16]}>
+            <Row gutter={[8, 40]}>
                 <Col span={6} offset={2}>
                     <Fade left>
                         <Link to="/masques">
