@@ -14,7 +14,7 @@ export default function Pro() {
                 </Col>
             </Row>
             <Row>
-                <Tabs defaultActiveKey="1" centered size="large" keyboard tabBarGutter={400}>
+                <Tabs defaultActiveKey="1">
                     <TabPane tab="2020-2021" key="1">
                         <Row>
                             <Col>

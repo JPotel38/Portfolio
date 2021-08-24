@@ -11,7 +11,7 @@ export default function Masques() {
         <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col offset={1} span={21}>
+                    <Col span={12}>
                         <Title>Masques.org</Title>
                     </Col>
                     <Col span={3} offset={3}>
@@ -21,13 +21,13 @@ export default function Masques() {
                     </Col>
                 </Row>
 
-                <Row style={{marginTop: 30}}>
-                    <Col span={15}>
+                <Row>
+                    <Col xs={0} sm={0} md={15}>
                         <iframe src="https://player.vimeo.com/video/431216403" title="video masques.org"
                                 width="100%" height="564" frameBorder="0" allow="autoplay; fullscreen"
                                 allowFullScreen/>
                     </Col>
-                    <Col offset={1} span={7}>
+                    <Col offset={2} xs={22} sm={22} md={7}>
                         <p>Masques.org est le projet final réalisé à La Caspule, en
                             l'espace de dix jours en trio. Le site utilise toutes les notions vues pendant la
                             formation. Le front-end est réalisé avec React.JS et Ant Design tandis que le

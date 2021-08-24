@@ -33,7 +33,7 @@ a {
     font-weight: bold;
 }
 
-.ant-progress-circle .ant-progress-text {
+.ant-progress-circle .ant-progress-text, .ant-collapse > .ant-collapse-item > .ant-collapse-header {
     color: var(--dark-red);
 }
 
@@ -64,7 +64,7 @@ h2.ant-typography, h3.ant-typography, h4.ant-typography {
     border: var(--pink);
 }
 
-.ant-btn-primary {
+.ant-btn-primary, .ant-collapse {
     background-color: var(--black);
     border-color: var(--black);
     color: var(--dark-red);
@@ -110,10 +110,6 @@ h2.ant-typography, h3.ant-typography, h4.ant-typography {
     height: 1200px;
 }
 
-.ant-tabs-tab {
-    font-size: 40px;
-}
-
 a.ant-btn {
     padding-top: 10px;
     line-height: 30px;
@@ -127,6 +123,10 @@ body,
 .ant-layout,
 .ant-collapse-content {
     background: var(--dark-blue);
+}
+
+.ant-collapse > .ant-collapse-item {
+    border-bottom: 1px solid var(--dark-red);
 }
 
 .ant-layout-header,

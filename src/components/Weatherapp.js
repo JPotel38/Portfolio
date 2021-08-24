@@ -11,8 +11,8 @@ export default function Weatherapp() {
     return (
         <Content style={{margin: '24px 16px 0'}}>
             <Row>
-                <Col span={6}>
-                    <Title offset={1} span={21}>Weather App</Title>
+                <Col span={12}>
+                    <Title>Weather App</Title>
                 </Col>
                 <Col span={3} offset={3}>
                     <a href="https://github.com/JPotel38/WeatherApp" target="_blank"
@@ -20,11 +20,11 @@ export default function Weatherapp() {
                         <GithubFilled/></a>
                 </Col>
             </Row>
-            <Row style={{marginTop: 30}}>
-                <Col span={15}>
+            <Row>
+                <Col xs={0} sm={0} md={15}>
                     <img alt="WeatherApp" src={weatherapp} width="100%"/>
                 </Col>
-                <Col offset={2} span={7}>
+                <Col offset={2} xs={22} sm={22} md={7}>
                     <p>Weather App est une application qui fait intervenir plusieurs outils. La map est
                         chargée avec LeafLet, une librairie open source. Couplé à l'utilisation d'un
                         webservice, ici l'API Open Weather Map, nous avons à la fois la météo en temps réel

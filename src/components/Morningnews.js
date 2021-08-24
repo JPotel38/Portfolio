@@ -13,8 +13,8 @@ export default function Morningnews() {
             <Content style={{margin: '24px 16px 0'}}>
                 <div style={{padding: 24, minHeight: 360}}>
                     <Row>
-                        <Col span={6}>
-                            <Title offset={1} span={21}>Morning News</Title>
+                        <Col span={12}>
+                            <Title>Morning News</Title>
                         </Col>
                         <Col span={3} offset={3}>
                             <a href="https://github.com/JPotel38/MorningNews" target="_blank"
@@ -22,15 +22,14 @@ export default function Morningnews() {
                                 <GithubFilled/></a>
                         </Col>
                     </Row>
-
-                    <Row style={{marginTop: 30}}>
-                        <Col span={14}>
+                    <Row>
+                        <Col xs={0} sm={0} md={15}>
                             <a href="https://morning-news69.herokuapp.com" target="_blank"
                                rel="noopener noreferrer">
                                 <img alt="Morningnews" src={morningnews} width="100%"/>
                             </a>
                         </Col>
-                        <Col offset={1} span={8}>
+                        <Col offset={2} xs={22} sm={22} md={7}>
                             <p>Morning News affiche les nouvelles des plus grands journaux français grâce à un appel
                                 en back-end de NewsAPI. Un changement d'état permet de générer ces sources en
                                 français ou en anglais. Une fois une source choisie, les articles du jour

@@ -12,8 +12,8 @@ export default function Ticketac() {
         <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col span={6}>
-                        <Title offset={1} span={21}>Ticketac </Title>
+                    <Col span={12}>
+                        <Title>Ticketac</Title>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/Hackaton" target="_blank" rel="noopener noreferrer"
@@ -21,7 +21,7 @@ export default function Ticketac() {
                     </Col>
                 </Row>
 
-                <Row style={{marginTop: 30}}>
+                <Row>
                     <Col span={14}>
                         <a href="https://ticetac-69.herokuapp.com/ " target="_blank" rel="noopener noreferrer">
                             <img alt="Ticketac" src={ticketac} width="100%" height="350"/>

@@ -5,7 +5,7 @@ import WimgmGames from '../images/WimgmGames.png';
 import WimgmSignup from '../images/WimgmSignup.png';
 
 const {Content} = Layout;
-const {Title, Text} = Typography;
+const {Title} = Typography;
 
 export default function Pokedex() {
 
@@ -13,8 +13,8 @@ export default function Pokedex() {
         <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col span={6}>
-                        <Title offset={1} span={21}>WhereIsMyGM</Title>
+                    <Col span={12}>
+                        <Title>WhereIsMyGM</Title>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/WhereIsMyGM/tree/master/src" target="_blank"
@@ -23,7 +23,7 @@ export default function Pokedex() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col xs={0} sm={0} md={15}>
                         <Row>
                             <img alt="WIMGM Games" src={WimgmGames} width="100%" height="350"/>
                         </Row>
@@ -31,7 +31,7 @@ export default function Pokedex() {
                             <img alt="WIMGM Home" src={WimgmSignup} width="100%" height="350"/>
                         </Row>
                     </Col>
-                    <Col offset={1} span={8}>
+                    <Col offset={2} xs={22} sm={22} md={7}>
                         <p>Projet stack MERN. Plate-forme pour trouver un maître du jeu par géolocalisation et/ ou
                         par jeu. Large choix de jeux trouvables par genre/ titre ou aléatoirement.</p>
                     </Col>

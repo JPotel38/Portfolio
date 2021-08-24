@@ -4,7 +4,7 @@ import {GithubFilled} from '@ant-design/icons';
 import pokemon from '../images/Pokemon.png';
 
 const {Content} = Layout;
-const {Title, Text} = Typography;
+const {Title} = Typography;
 
 export default function Pokedex() {
 
@@ -12,8 +12,8 @@ export default function Pokedex() {
         <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col span={6}>
-                        <Title offset={1} span={21}>Pokedex</Title>
+                    <Col span={12}>
+                        <Title>Pokedex</Title>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/pokedex" target="_blank" rel="noopener noreferrer"
@@ -24,8 +24,8 @@ export default function Pokedex() {
                 <Col span={14}>
                     <img alt="Pokedex" src={pokemon} width="100%" height="350"/>
                 </Col>
-                    <Col offset={1} span={8}>
-                        <p>Projet front Angular pour pratiquer tout les principes fondamentaux du framework :
+                    <Col offset={2} xs={22} sm={22} md={7}>
+                        <p>Projet front-end Angular pour pratiquer tout les principes fondamentaux du framework :
                         resolvers, services, guards, interceptors, pipes, tests etc...</p>
                     </Col>
                 </Row>

@@ -32,7 +32,7 @@ export default function App() {
                 <Route path="/education" component={Education}/>
                 <Route path="/perso" component={Perso}/>
                 <Route path="/projets" component={Projets}/>
-                <Route path="/projets" component={Projets}/>
+                <Route path="/masques" component={Masques}/>
                 <Route path="/filrouge" component={FilRouge}/>
                 <Route path="/morningnews" component={Morningnews}/>
                 <Route path="/ticketac" component={Ticketac}/>

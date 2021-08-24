@@ -12,17 +12,16 @@ export default function Mymoviz() {
         <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col span={6}>
-                        <Title offset={1} span={21}>My Moviz</Title>
+                    <Col span={12}>
+                        <Title>My Moviz</Title>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/My-Moviz" target="_blank" rel="noopener noreferrer"
                            style={{color: '#92D050', fontSize: "50px"}}> <GithubFilled/></a>
                     </Col>
                 </Row>
-
-                <Row style={{marginTop: 30}}>
-                    <Col span={14}>
+                <Row>
+                    <Col xs={0} sm={0} md={15}>
                         <a href="https://mymoviz-69.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                             <img alt="MyMoviz" src={mymoviz} width="100%" height="350"/>
                         </a>

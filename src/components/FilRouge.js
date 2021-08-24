@@ -12,8 +12,8 @@ export default function FilRouge() {
         <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col span={6}>
-                        <Title offset={1} span={21}>Projet final School By Hi!t</Title>
+                    <Col span={12}>
+                        <Title>Projet final School By Hi!t</Title>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/final-project-school-by-hiit" target="_blank"
@@ -21,11 +21,11 @@ export default function FilRouge() {
                             <GithubFilled/></a>
                     </Col>
                 </Row>
-                <Row style={{marginTop: 30}}>
-                    <Col>
+                <Row>
+                    <Col xs={0} sm={0} md={15}>
                         <img alt="SchoolByHiit" src={SchoolByHiit} width="100%" height="350"/>
                     </Col>
-                    <Col offset={1} span={7}>
+                    <Col offset={2} xs={22} sm={22} md={7}>
                         <p>Projet final de l'alternance proposée par School By Hiit. Réalisation d'une plate-forme
                         pour les prochains étudiants. Back en Java et Spring (Security notamment), front en Angular
                         avec Ionic. Utilisation de Docker pour faciliter et harmonier la connexion à la base de données

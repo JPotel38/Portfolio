@@ -39,7 +39,7 @@ export default function Home() {
                 </Col>
             </Row>
             <Row style={{textAlign: 'center'}}>
-                <Col offset={6} span={10}>
+                <Col offset={4} span={14}>
                     <Title level={2}>
                         <Typewriter
                             options={{
