@@ -25,7 +25,7 @@ export default function Home() {
             </Row>
             <Row style={{textAlign: 'center'}}>
                 <Col offset={6} span={10}>
-                    <Title level={3}>
+                    <Title>
                         <Typewriter
                             options={{
                                 cursor: ' '
@@ -40,7 +40,7 @@ export default function Home() {
             </Row>
             <Row style={{textAlign: 'center'}}>
                 <Col offset={6} span={10}>
-                    <Title level={4}>
+                    <Title level={2}>
                         <Typewriter
                             options={{
                                 cursor: ' '
@@ -59,7 +59,7 @@ export default function Home() {
             <Pro/>
             <Education/>
             <Collapse>
-                <Panel header="About Me" key="1" id="perso">
+                <Panel header="A propos" key="1" id="perso">
                     <Perso/>
                 </Panel>
             </Collapse>

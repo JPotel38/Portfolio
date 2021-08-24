@@ -12,7 +12,8 @@ export default function Education() {
     const schoolByHiit = () => {
         setIsModalVisible(true);
         setDetails(<p>Douze semaines de cours centrées sur Java et Angular. Réalisation de TP hebdomadaires.
-            Projet fil rouge final en deux semaines intensives : création d'une plate-forme pour les promos suivantes.
+            Projet fil rouge final en deux semaines intensives :
+            création d'une plate-forme pour les promotions suivantes en Java en back et Angular en front.
             <Title level={2}>Technologies:</Title>
             <Row>
                 <Col span={8}>
@@ -120,8 +121,8 @@ export default function Education() {
     return (
         <div id="education">
             <Row>
-                <Col span={24}>
-                    <Title>Education</Title>
+                <Col offset={1} span={21}>
+                    <Title level={2}>Education</Title>
                 </Col>
             </Row>
             <Row>
@@ -142,11 +143,10 @@ export default function Education() {
                         2.</p></Timeline.Item>
                 </Timeline>
                 <Modal visible={isModalVisible}
+                       onCancel={() => setIsModalVisible(false)}
                        footer={[
-                           <Button key="back" onClick={() => {
-                               setIsModalVisible(false);
-                           }}>
-                               Return
+                           <Button key="back" onClick={() => setIsModalVisible(false)}>
+                               Retour
                            </Button>
                        ]}>
                     {details}

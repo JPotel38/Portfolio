@@ -16,15 +16,15 @@ export default function Skills() {
 
     useEffect(() => {
         if (html < 70) {
-            setTimeout(function () {
+            setTimeout(() => {
                 setHtml(prevHtml => prevHtml + 1);
             }, 10);
         }
     }, [html]);
 
     useEffect(() => {
-        if (css < 50) {
-            setTimeout(function () {
+        if (css < 60) {
+            setTimeout(() => {
                 setCss(prevCss => prevCss + 1);
             }, 10);
         }
@@ -32,22 +32,22 @@ export default function Skills() {
 
     useEffect(() => {
         if (js < 70) {
-            setTimeout(function () {
+            setTimeout(() => {
                 setJs(prevJs => prevJs + 1);
             }, 10);
         }
     }, [js]);
     useEffect(() => {
-        if (angular < 70) {
-            setTimeout(function () {
+        if (angular < 65) {
+            setTimeout(() => {
                 setAngular(prevAntd => prevAntd + 1);
             }, 10);
         }
     }, [angular]);
 
     useEffect(() => {
-        if (node < 40) {
-            setTimeout(function () {
+        if (node < 30) {
+            setTimeout(() => {
                 setNode(prevNode => prevNode + 1);
             }, 10);
         }
@@ -64,7 +64,9 @@ export default function Skills() {
     return (
         <div>
             <Row>
-                <Col><Title level={2}>Technologies : </Title></Col>
+                <Col offset={1} span={21}>
+                    <Title level={2}>Technologies : </Title>
+                </Col>
             </Row>
             <Row>
                 <Col xs={24} sm={10} md={1} offset={1}>

@@ -11,7 +11,7 @@ export default function NotFound() {
         <Content>
             <Row>
                 <Col span={24}>
-                    <Title>Not found :(</Title>
+                    <Title offset={1} span={21}>Not found :(</Title>
                 </Col>
                 <Col xs={0} sm={0} md={23} offset={1}>
                     <img src={notfound} style={{width: "500px"}} alt="404"/>

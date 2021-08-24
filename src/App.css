@@ -17,7 +17,7 @@
 }
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
 p,
@@ -37,14 +37,18 @@ a {
     color: var(--dark-red);
 }
 
-h1.ant-typography, h2.ant-typography {
+h1.ant-typography {
     color: var(--red);
-    margin: 50px;
 }
 
-h3.ant-typography, h4.ant-typography {
+h2.ant-typography, h3.ant-typography, h4.ant-typography {
     color: var(--red);
-    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ant-tabs {
+    margin-left: 30px;
 }
 
 .ant-tabs-tab {
@@ -58,6 +62,17 @@ h3.ant-typography, h4.ant-typography {
 .ant-btn:hover, .ant-btn:focus {
     color: var(--pink);
     border: var(--pink);
+}
+
+.ant-btn-primary {
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--dark-red);
+}
+
+.ant-btn-primary:hover {
+    background-color: var(--purple);
+
 }
 
 .ant-timeline-item-head-blue {
@@ -108,6 +123,7 @@ a.ant-btn {
     margin-bottom: 64px !important;
 }
 
+body,
 .ant-layout,
 .ant-collapse-content {
     background: var(--dark-blue);

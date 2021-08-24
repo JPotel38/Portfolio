@@ -9,9 +9,10 @@ const {Title} = Typography;
 export default function Blackboard() {
 
     return (
+        <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col span={6}>
+                    <Col offset={1} span={21}>
                         <Title>Black Board</Title>
                     </Col>
                     <Col span={3} offset={3}>
@@ -21,14 +22,14 @@ export default function Blackboard() {
                     </Col>
                 </Row>
 
-                <Row style={{marginTop: 30}}>
-                    <Col span={15}>
+                <Row>
+                    <Col span={14}>
                         <a href="https://blackboard-69.herokuapp.com/" target="_blank"
                            rel="noopener noreferrer">
                             <img alt="BlackBoard" src={blackboard} width="100%"/>
                         </a>
                     </Col>
-                    <Col offset={2} span={7}>
+                    <Col offset={1} span={7}>
                         <p>Black Board est un projet qui met en place la data vision. Ce projet a necéssité
                             l'utilisation de clés étrangères/ Sous-documents, ainsi que l'agrégation de données
                             pour des résultats corrects et clair. Ce fut aussi l'occasion de nous familisariser
@@ -36,5 +37,6 @@ export default function Blackboard() {
                     </Col>
                 </Row>
             </Content>
+        </Layout>
     )
 }

@@ -8,7 +8,11 @@ export default function Pro() {
 
     return (
         <div id="pro">
-            <Row><Col span={24}><Title>Expériences professionnelles</Title></Col></Row>
+            <Row>
+                <Col offset={1} span={21}>
+                    <Title level={2}>Expériences professionnelles</Title>
+                </Col>
+            </Row>
             <Row>
                 <Tabs defaultActiveKey="1" centered size="large" keyboard tabBarGutter={400}>
                     <TabPane tab="2020-2021" key="1">

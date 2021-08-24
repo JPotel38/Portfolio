@@ -19,7 +19,7 @@ export default function Nav() {
                 </Menu.Item>
                 <Menu.Item key="3"><HashLink smooth to='/Portfolio#pro'>Emplois</HashLink>
                 </Menu.Item>
-                <Menu.Item key="4"><HashLink smooth to='/Portfolio#perso'>Projets personnels</HashLink>
+                <Menu.Item key="4"><HashLink smooth to='/Portfolio#perso'>A propos</HashLink>
                 </Menu.Item>
                 <Menu.Item key="5"><HashLink smooth to='/Portfolio#contact'>Contact</HashLink>
                 </Menu.Item>

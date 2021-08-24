@@ -11,7 +11,7 @@ export default function Masques() {
         <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
-                    <Col span={6}>
+                    <Col offset={1} span={21}>
                         <Title>Masques.org</Title>
                     </Col>
                     <Col span={3} offset={3}>

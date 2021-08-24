@@ -11,6 +11,7 @@ import bikeshop from '../images/Bikeshop.PNG'
 import blackboard from '../images/BlackBoard.PNG'
 import pokedex from '../images/Pokedex.png'
 import WimgmHome from '../images/WimgmHome.png'
+import SBHlogo from '../images/SBHlogo.png'
 
 const {Title} = Typography;
 const {Meta} = Card;
@@ -20,13 +21,25 @@ export default function Projets() {
     return (
         <div id="projets">
             <Row>
-                <Col span={24}>
-                    <Title>Projets</Title>
+                <Col offset={1} span={21}>
+                    <Title level={2}>Projets</Title>
                 </Col>
             </Row>
             <Row gutter={[8, 40]}>
                 <Col span={6} offset={2}>
                     <Fade left>
+                        <Link to="/FilRouge">
+                            <Card
+                                hoverable
+                                cover={<img alt="SchoolByHiit Logo Jérémy Potel" src={SBHlogo}/>}
+                            >
+                                <Meta title="Projet final School By Hiit"/>
+                            </Card>
+                        </Link>
+                    </Fade>
+                </Col>
+                <Col span={6}>
+                    <Fade top>
                         <Link to="/masques">
                             <Card
                                 hoverable
@@ -38,7 +51,7 @@ export default function Projets() {
                     </Fade>
                 </Col>
                 <Col span={6}>
-                    <Fade top>
+                    <Fade right>
                         <Link to="/morningnews">
                             <Card
                                 hoverable
@@ -49,7 +62,7 @@ export default function Projets() {
                         </Link>
                     </Fade>
                 </Col>
-                <Col span={6}>
+                <Col span={6} offset={2}>
                     <Fade right>
                         <Link to="/blackboard">
                             <Card
@@ -61,7 +74,7 @@ export default function Projets() {
                         </Link>
                     </Fade>
                 </Col>
-                <Col span={6} offset={2}>
+                <Col span={6}>
                     <Fade left>
                         <Link to="/mymoviz">
                             <Card
@@ -85,7 +98,7 @@ export default function Projets() {
                         </Link>
                     </Fade>
                 </Col>
-                <Col span={6}>
+                <Col offset={2} span={8}>
                     <Fade right>
                         <Link to="/bikeshop">
                             <Card
@@ -97,7 +110,7 @@ export default function Projets() {
                         </Link>
                     </Fade>
                 </Col>
-                <Col offset={8} span={8}>
+                <Col span={8}>
                     <Fade left>
                         <Link to="/weatherapp">
                             <Card

@@ -19,6 +19,7 @@ import Projets from "./components/Projets";
 import Pokedex from "./components/Pokedex";
 import RPG from "./components/RPG";
 import Contact from "./components/Contact";
+import FilRouge from "./components/FilRouge";
 
 export default function App() {
 
@@ -31,7 +32,8 @@ export default function App() {
                 <Route path="/education" component={Education}/>
                 <Route path="/perso" component={Perso}/>
                 <Route path="/projets" component={Projets}/>
-                <Route path="/masques" component={Masques}/>
+                <Route path="/projets" component={Projets}/>
+                <Route path="/filrouge" component={FilRouge}/>
                 <Route path="/morningnews" component={Morningnews}/>
                 <Route path="/ticketac" component={Ticketac}/>
                 <Route path="/blackboard" component={Blackboard}/>

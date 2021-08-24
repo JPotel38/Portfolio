@@ -12,7 +12,7 @@ export default function Weatherapp() {
         <Content style={{margin: '24px 16px 0'}}>
             <Row>
                 <Col span={6}>
-                    <Title>Weather App</Title>
+                    <Title offset={1} span={21}>Weather App</Title>
                 </Col>
                 <Col span={3} offset={3}>
                     <a href="https://github.com/JPotel38/WeatherApp" target="_blank"

@@ -48,10 +48,14 @@ export default function Contact() {
 
     return (
         <div id="contact">
-            <Title>Contact</Title>
+            <Row>
+                <Col offset={1} span={21}>
+                    <Title level={2}>Contact</Title>
+                </Col>
+            </Row>
             <Row>
                 <Col offset={8} span={4}>
-                    <Tooltip title="Write to me !">
+                    <Tooltip title="Ecrivez-moi !">
                         <address>
                             <a href="mailto:potel.jeremy@gmail.com">potel.jeremy@gmail.com</a>
                         </address>
@@ -67,9 +71,9 @@ export default function Contact() {
                 validateMessages={validateMessages}
             >
                 <Form.Item
-                    label="Name"
-                    name="name"
-                    rules={[{required: true, message: 'Please input your name!'}]}
+                    label="Nom"
+                    name="nom"
+                    rules={[{required: true, message: 'Veuillez entrer votre nom.'}]}
                 >
                     <Input
                         onChange={(e) => setName(e.target.value)}
@@ -77,8 +81,8 @@ export default function Contact() {
                 </Form.Item>
 
                 <Form.Item
-                    label="Company"
-                    name="company"
+                    label="Entreprise"
+                    name="entreprise"
                 >
                     <Input
                         onChange={(e) => setCompany(e.target.value)}
@@ -88,7 +92,7 @@ export default function Contact() {
                 <Form.Item
                     label="Email"
                     name="email"
-                    rules={[{required: true, type: 'email', message: 'Please input your email!'}]}
+                    rules={[{required: true, type: 'email', message: 'Veuillez renseigner un email.'}]}
                 >
                     <Input
                         onChange={(e) => setEmail(e.target.value)}
@@ -96,8 +100,8 @@ export default function Contact() {
                 </Form.Item>
 
                 <Form.Item
-                    label="Phone"
-                    name="phone"
+                    label="Téléphone"
+                    name="téléphone"
                 >
                     <Input
                         onChange={(e) => setPhone(e.target.value)}
@@ -105,7 +109,7 @@ export default function Contact() {
                 </Form.Item>
 
                 <Form.Item name={'message'} label="Message"
-                           rules={[{required: true, message: 'Entre a message'}]}
+                           rules={[{required: true, message: 'Veuillez écrire un message.'}]}
                 >
                     <Input.TextArea
                         onChange={(e) => setMessage(e.target.value)}
@@ -114,7 +118,7 @@ export default function Contact() {
 
                 <Form.Item wrapperCol={{offset: 8, span: 4}}>
                     <Button type="primary" htmlType="submit" onClick={handleSubmit}>
-                        Submit
+                        Envoyer
                     </Button>
                 </Form.Item>
             </Form>

@@ -4,15 +4,16 @@ import {GithubFilled} from '@ant-design/icons';
 import ticketac from '../images/Ticketac.PNG'
 
 const {Content} = Layout;
-const {Title, Text} = Typography;
+const {Title} = Typography;
 
 export default function Ticketac() {
 
     return (
+        <Layout>
             <Content style={{margin: '24px 16px 0'}}>
                 <Row>
                     <Col span={6}>
-                        <Title>Ticketac </Title>
+                        <Title offset={1} span={21}>Ticketac </Title>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/Hackaton" target="_blank" rel="noopener noreferrer"
@@ -27,15 +28,16 @@ export default function Ticketac() {
                         </a>
                     </Col>
                     <Col offset={1} span={8}>
-                        <Text style={{fontSize: 20}}>Ticketac est notre premier projet réalisé de manière
+                        <p>Ticketac est notre premier projet réalisé de manière
                             intensive. En duo, nous avions quatre jours pour réaliser un site de réservation de
                             ticket de train, proposant panier et récapitulatif des commandes passées et des
                             trajets à venir.
-                            <p>Les technologies utilisées en back-end sont Node.js et Express. En front-end, il
+                            Les technologies utilisées en back-end sont Node.js et Express. En front-end, il
                                 s'agit d'un usage de HTML, CSS, Javascript et Jquery. Le site est responsive
-                                grâce à l'utilisation de Bootstrap.</p></Text>
+                                grâce à l'utilisation de Bootstrap.</p>
                     </Col>
                 </Row>
             </Content>
+        </Layout>
     )
 }
