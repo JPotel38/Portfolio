@@ -6,7 +6,7 @@ import {init} from 'emailjs-com';
 const {Title} = Typography;
 
 require('dotenv').config()
-init(process.env.REACT_APP_EMAILJS_USERID);
+init('user_b1bVqK26JP7SBho787TKx');
 
 const success = () => {
     message.success('Message envoyé');
@@ -37,7 +37,7 @@ export default function Contact() {
             message,
         };
 
-        emailjs.send(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID, templateParams)
+        emailjs.send('service_ig47v2i', 'template_ffsce2q', templateParams)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 {
