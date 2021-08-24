@@ -31,9 +31,7 @@ export default function Blackboard() {
                     </Col>
                     <Col offset={2} xs={22} sm={22} md={7}>
                         <p>Black Board est un projet qui met en place la data vision. Ce projet a necéssité
-                            l'utilisation de clés étrangères/ Sous-documents, ainsi que l'agrégation de données
-                            pour des résultats corrects et clair. Ce fut aussi l'occasion de nous familisariser
-                            avec les dates.</p>
+                            l'utilisation de clés étrangères/ sous-documents, ainsi que l'agrégation de données.</p>
                     </Col>
                 </Row>
             </Content>

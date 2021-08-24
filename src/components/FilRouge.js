@@ -28,7 +28,7 @@ export default function FilRouge() {
                     <Col offset={2} xs={22} sm={22} md={7}>
                         <p>Projet final de l'alternance proposée par School By Hiit. Réalisation d'une plate-forme
                         pour les prochains étudiants. Back en Java et Spring (Security notamment), front en Angular
-                        avec Ionic. Utilisation de Docker pour faciliter et harmonier la connexion à la base de données
+                        avec Ionic. Utilisation de Docker pour faciliter et harmonsier la connexion à la base de données
                         MySQL.</p>
                     </Col>
                 </Row>

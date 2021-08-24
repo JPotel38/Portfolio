@@ -27,7 +27,8 @@ export default function Bikeshop() {
                     </Col>
                     <Col offset={2} xs={22} sm={22} md={7}>
                         <p>Bike Shop est un projet qui simule un site d'achat de vélo. Le panier et la page
-                            d'accueil sont mis à jour grâce à l'utilisation du back-end.</p>
+                            d'accueil sont mis à jour grâce à l'utilisation du back-end.
+                            Utilisation de Stripe pour le module de paiement.</p>
                     </Col>
                 </Row>
             </Content>
