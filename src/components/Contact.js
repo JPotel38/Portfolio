@@ -49,12 +49,12 @@ export default function Contact() {
     return (
         <div id="contact">
             <Row>
-                <Col offset={1} span={21}>
+                <Col offset={1} span={12}>
                     <Title level={2}>Contact</Title>
                 </Col>
             </Row>
             <Row>
-                <Col offset={8} span={4}>
+                <Col offset={1} span={12}>
                     <Tooltip title="Ecrivez-moi !">
                         <address>
                             <a href="mailto:potel.jeremy@gmail.com">potel.jeremy@gmail.com</a>
@@ -63,65 +63,69 @@ export default function Contact() {
                     <p>+33782736832</p>
                 </Col>
             </Row>
-
-            <Form
-                name="basic"
-                labelCol={{span: 8}}
-                wrapperCol={{span: 6}}
-                validateMessages={validateMessages}
+<Row>
+    <Col offset={1}>
+        <Form
+            name="basic"
+            labelCol={{span: 8}}
+            wrapperCol={{span: 14}}
+            validateMessages={validateMessages}
+        >
+            <Form.Item
+                label="Nom"
+                name="nom"
+                rules={[{required: true, message: 'Veuillez entrer votre nom.'}]}
             >
-                <Form.Item
-                    label="Nom"
-                    name="nom"
-                    rules={[{required: true, message: 'Veuillez entrer votre nom.'}]}
-                >
-                    <Input
-                        onChange={(e) => setName(e.target.value)}
-                    />
-                </Form.Item>
+                <Input
+                    onChange={(e) => setName(e.target.value)}
+                />
+            </Form.Item>
 
-                <Form.Item
-                    label="Entreprise"
-                    name="entreprise"
-                >
-                    <Input
-                        onChange={(e) => setCompany(e.target.value)}
-                    />
-                </Form.Item>
+            <Form.Item
+                label="Entreprise"
+                name="entreprise"
+            >
+                <Input
+                    onChange={(e) => setCompany(e.target.value)}
+                />
+            </Form.Item>
 
-                <Form.Item
-                    label="Email"
-                    name="email"
-                    rules={[{required: true, type: 'email', message: 'Veuillez renseigner un email.'}]}
-                >
-                    <Input
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </Form.Item>
+            <Form.Item
+                label="Email"
+                name="email"
+                rules={[{required: true, type: 'email', message: 'Veuillez renseigner un email.'}]}
+            >
+                <Input
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+            </Form.Item>
 
-                <Form.Item
-                    label="Téléphone"
-                    name="téléphone"
-                >
-                    <Input
-                        onChange={(e) => setPhone(e.target.value)}
-                    />
-                </Form.Item>
+            <Form.Item
+                label="Téléphone"
+                name="téléphone"
+            >
+                <Input
+                    onChange={(e) => setPhone(e.target.value)}
+                />
+            </Form.Item>
 
-                <Form.Item name={'message'} label="Message"
-                           rules={[{required: true, message: 'Veuillez écrire un message.'}]}
-                >
-                    <Input.TextArea
-                        onChange={(e) => setMessage(e.target.value)}
-                    />
-                </Form.Item>
+            <Form.Item name={'message'} label="Message"
+                       rules={[{required: true, message: 'Veuillez écrire un message.'}]}
+            >
+                <Input.TextArea
+                    onChange={(e) => setMessage(e.target.value)}
+                />
+            </Form.Item>
 
-                <Form.Item wrapperCol={{offset: 8, span: 4}}>
-                    <Button type="primary" htmlType="submit" onClick={handleSubmit}>
-                        Envoyer
-                    </Button>
-                </Form.Item>
-            </Form>
+            <Form.Item wrapperCol={{offset: 8, span: 4}}>
+                <Button type="primary" htmlType="submit" onClick={handleSubmit}>
+                    Envoyer
+                </Button>
+            </Form.Item>
+        </Form>
+    </Col>
+</Row>
+
         </div>
     );
 };

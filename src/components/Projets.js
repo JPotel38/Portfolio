@@ -124,7 +124,9 @@ export default function Projets() {
                 </Col>
             </Row>
             <Row>
-                <Title level={4}>Projets en cours</Title>
+                <Col offset={3}>
+                    <Title level={4}>Projets en cours</Title>
+                </Col>
             </Row>
             <Row>
                 <Col offset={4} span={8}>

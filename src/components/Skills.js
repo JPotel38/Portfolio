@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Col, Progress, Row, Typography} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCss3Alt, faHtml5, faJs, faNodeJs, faReact} from "@fortawesome/free-brands-svg-icons";
-import Angular from "../images/Angular.svg";
+import {faCss3Alt, faHtml5, faJs, faNodeJs, faReact, faAngular} from "@fortawesome/free-brands-svg-icons";
 
 const {Title} = Typography;
 
@@ -64,12 +63,12 @@ export default function Skills() {
     return (
         <div>
             <Row>
-                <Col offset={1} span={21}>
-                    <Title level={2}>Technologies : </Title>
+                <Col offset={1} span={14}>
+                    <Title level={2}>Technologies</Title>
                 </Col>
             </Row>
             <Row>
-                <Col xs={24} sm={10} md={1} offset={1}>
+                <Col xs={24} sm={10} md={3} offset={1}>
                     <FontAwesomeIcon
                         icon={faHtml5}
                         size="8x"
@@ -85,7 +84,7 @@ export default function Skills() {
                     />
                 </Col>
 
-                <Col xs={24} sm={10} md={1} offset={3}>
+                <Col xs={24} sm={10} md={3} offset={1}>
                     <FontAwesomeIcon
                         icon={faCss3Alt}
                         size="8x"
@@ -99,7 +98,7 @@ export default function Skills() {
                         trailColor="#E5E5E5"
                     />
                 </Col>
-                <Col xs={24} sm={10} md={1} offset={3}>
+                <Col xs={24} sm={10} md={3} offset={1}>
                     <FontAwesomeIcon
                         icon={faJs}
                         size="8x"
@@ -114,9 +113,13 @@ export default function Skills() {
                     />
 
                 </Col>
-                <Col xs={24} sm={10} md={1} offset={3}>
-                    <img src={Angular} title='Angular' alt='Angular Jérémy Potel'
-                         style={{width: '8em'}}/>
+                <Col xs={24} sm={10} md={3} offset={1}>
+                    <FontAwesomeIcon
+                        icon={faAngular}
+                        size="8x"
+                        color="#d6002f"
+                        title="Angular 9"
+                    />
                     <Progress
                         type="circle"
                         strokeColor='#d70622'
@@ -124,7 +127,7 @@ export default function Skills() {
                         trailColor="#E5E5E5"
                     />
                 </Col>
-                <Col xs={24} sm={10} md={1} offset={3}>
+                <Col xs={24} sm={10} md={3} offset={1}>
                     <FontAwesomeIcon
                         icon={faNodeJs}
                         size="8x"
@@ -138,7 +141,7 @@ export default function Skills() {
                         trailColor="#E5E5E5"
                     />
                 </Col>
-                <Col xs={24} sm={10} md={1} offset={3}>
+                <Col xs={24} sm={10} md={3} offset={1}>
                     <FontAwesomeIcon
                         icon={faReact}
                         size="8x"

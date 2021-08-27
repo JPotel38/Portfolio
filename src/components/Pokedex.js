@@ -21,7 +21,7 @@ export default function Pokedex() {
                     </Col>
                 </Row>
                 <Row>
-                <Col span={14}>
+                <Col xs={0} sm={0} md={14}>
                     <img alt="Pokedex" src={pokemon} width="100%" height="350"/>
                 </Col>
                     <Col offset={2} xs={22} sm={22} md={7}>
