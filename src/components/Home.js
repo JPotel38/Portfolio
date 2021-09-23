@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <Layout>
             <Row>
-                <Col offset={9} xs={12} sm={12} md={6}>
+                <Col offset={10} xs={12} sm={12} md={4}>
                     <Flash>
                         <img id='picture' src={photo} alt='Jérémy Potel'/>
                     </Flash>

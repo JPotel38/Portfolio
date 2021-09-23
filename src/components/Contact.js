@@ -64,11 +64,10 @@ export default function Contact() {
                 </Col>
             </Row>
 <Row>
-    <Col offset={1}>
+    <Col xs={20} sm={16} md={12}>
         <Form
             name="basic"
-            labelCol={{span: 8}}
-            wrapperCol={{span: 14}}
+            labelCol={{span: 6}}
             validateMessages={validateMessages}
         >
             <Form.Item
