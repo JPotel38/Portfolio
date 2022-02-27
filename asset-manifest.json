@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.dff9f609.chunk.css",
-    "main.js": "/Portfolio/static/js/main.09966579.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.09966579.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.d7d97bdc.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.d7d97bdc.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c74a019d.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c74a019d.js.map",
     "static/css/2.5f5f9133.chunk.css": "/Portfolio/static/css/2.5f5f9133.chunk.css",
@@ -21,7 +21,7 @@
     "static/media/Pokedex.c0b21e35.png": "/Portfolio/static/media/Pokedex.c0b21e35.png",
     "static/media/Pokemon.422d6c83.png": "/Portfolio/static/media/Pokemon.422d6c83.png",
     "static/media/SBHlogo.36a0076a.png": "/Portfolio/static/media/SBHlogo.36a0076a.png",
-    "static/media/SchoolByHiit.d21cf7b7.png": "/Portfolio/static/media/SchoolByHiit.d21cf7b7.png",
+    "static/media/SchoolByHiit.36a0076a.png": "/Portfolio/static/media/SchoolByHiit.36a0076a.png",
     "static/media/Ticketac.3a0b4352.PNG": "/Portfolio/static/media/Ticketac.3a0b4352.PNG",
     "static/media/Weatherapp.ca74d886.PNG": "/Portfolio/static/media/Weatherapp.ca74d886.PNG",
     "static/media/WimgmGames.33aa79bc.png": "/Portfolio/static/media/WimgmGames.33aa79bc.png",
@@ -34,6 +34,6 @@
     "static/css/2.5f5f9133.chunk.css",
     "static/js/2.3017fee5.chunk.js",
     "static/css/main.dff9f609.chunk.css",
-    "static/js/main.09966579.chunk.js"
+    "static/js/main.d7d97bdc.chunk.js"
   ]
 }
