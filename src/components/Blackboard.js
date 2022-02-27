@@ -2,6 +2,7 @@ import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
 import blackboard from '../images/BlackBoard.PNG';
+import {FormattedMessage} from "react-intl";
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -30,8 +31,11 @@ export default function Blackboard() {
                         </a>
                     </Col>
                     <Col offset={2} xs={22} sm={22} md={7}>
-                        <p>Black Board est un projet qui met en place la data vision. Ce projet a necéssité
-                            l'utilisation de clés étrangères/ sous-documents, ainsi que l'agrégation de données.</p>
+                        <p><FormattedMessage id="Blackboard.desc" defaultMessage="Black Board est un projet
+                        qui met en place la data vision. Ce projet a necéssité
+                            l'utilisation de clés étrangères/ sous-documents, ainsi que l'agrégation de données.">
+                        </FormattedMessage>
+                        </p>
                     </Col>
                 </Row>
             </Content>

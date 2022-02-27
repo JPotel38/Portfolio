@@ -9,6 +9,7 @@ import Education from "./Education";
 import Perso from "./Perso";
 import Typewriter from "typewriter-effect";
 import Contact from "./Contact";
+import {FormattedMessage} from "react-intl";
 
 const {Title} = Typography;
 const {Panel} = Collapse;
@@ -47,7 +48,7 @@ export default function Home() {
                             }}
                             onInit={(typewriter) => {
                                 typewriter.pauseFor(2500)
-                                    .typeString('Développeur full stack')
+                                    .typeString('Front-end developer')
                                     .start();
                             }}
                         />
@@ -59,7 +60,12 @@ export default function Home() {
             <Pro/>
             <Education/>
             <Collapse>
-                <Panel header="A propos" key="1" id="perso">
+                <Panel key="1" id="perso" header={
+                    <FormattedMessage
+                        id="Home.about"
+                        defaultMessage="A propos"
+                    />
+                }>
                     <Perso/>
                 </Panel>
             </Collapse>

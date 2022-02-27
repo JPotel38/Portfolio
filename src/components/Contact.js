@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Button, Col, Form, Input, message, Row, Tooltip, Typography} from 'antd';
 import * as emailjs from 'emailjs-com';
 import {init} from 'emailjs-com';
+import {FormattedMessage} from "react-intl";
 
 const {Title} = Typography;
 
@@ -39,10 +40,7 @@ export default function Contact() {
 
         emailjs.send('service_ig47v2i', 'template_ffsce2q', templateParams)
             .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                {
-                    success()
-                }
+                success()
             });
     };
 
@@ -63,67 +61,79 @@ export default function Contact() {
                     <p>+33782736832</p>
                 </Col>
             </Row>
-<Row>
-    <Col xs={20} sm={16} md={12}>
-        <Form
-            name="basic"
-            labelCol={{span: 6}}
-            validateMessages={validateMessages}
-        >
-            <Form.Item
-                label="Nom"
-                name="nom"
-                rules={[{required: true, message: 'Veuillez entrer votre nom.'}]}
-            >
-                <Input
-                    onChange={(e) => setName(e.target.value)}
-                />
-            </Form.Item>
+            <Row>
+                <Col xs={20} sm={16} md={12}>
+                    <Form
+                        name="basic"
+                        labelCol={{span: 6}}
+                        validateMessages={validateMessages}
+                    >
+                        <Form.Item
+                            label="Nom"
+                            name="nom"
+                            rules={[{
+                                required: true, message:
+                                    <FormattedMessage id="Contact.mustName"
+                                                      defaultMessage="Veuillez renseigner un nom."/>
+                            }]}
+                        >
+                            <Input
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                        </Form.Item>
 
-            <Form.Item
-                label="Entreprise"
-                name="entreprise"
-            >
-                <Input
-                    onChange={(e) => setCompany(e.target.value)}
-                />
-            </Form.Item>
+                        <Form.Item
+                            label="Entreprise"
+                            name="entreprise"
+                        >
+                            <Input
+                                onChange={(e) => setCompany(e.target.value)}
+                            />
+                        </Form.Item>
 
-            <Form.Item
-                label="Email"
-                name="email"
-                rules={[{required: true, type: 'email', message: 'Veuillez renseigner un email.'}]}
-            >
-                <Input
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-            </Form.Item>
+                        <Form.Item
+                            label="Email"
+                            name="email"
+                            rules={[{
+                                required: true, type: 'email', message:
+                                    <FormattedMessage id="Contact.mustEmail"
+                                                      defaultMessage="Veuillez renseigner un email."/>
+                            }]}
+                        >
+                            <Input
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </Form.Item>
 
-            <Form.Item
-                label="Téléphone"
-                name="téléphone"
-            >
-                <Input
-                    onChange={(e) => setPhone(e.target.value)}
-                />
-            </Form.Item>
+                        <Form.Item
+                            label="Téléphone"
+                            name="téléphone"
+                        >
+                            <Input
+                                onChange={(e) => setPhone(e.target.value)}
+                            />
+                        </Form.Item>
 
-            <Form.Item name={'message'} label="Message"
-                       rules={[{required: true, message: 'Veuillez écrire un message.'}]}
-            >
-                <Input.TextArea
-                    onChange={(e) => setMessage(e.target.value)}
-                />
-            </Form.Item>
+                        <Form.Item name={'message'} label="Message"
+                                   rules={[{
+                                       required: true, message:
+                                           <FormattedMessage id="Contact.mustMessage"
+                                                             defaultMessage="Veuillez écrire un message."/>
+                                   }]}
+                        >
+                            <Input.TextArea
+                                onChange={(e) => setMessage(e.target.value)}
+                            />
+                        </Form.Item>
 
-            <Form.Item wrapperCol={{offset: 8, span: 4}}>
-                <Button type="primary" htmlType="submit" onClick={handleSubmit}>
-                    Envoyer
-                </Button>
-            </Form.Item>
-        </Form>
-    </Col>
-</Row>
+                        <Form.Item wrapperCol={{offset: 8, span: 4}}>
+                            <Button type="primary" htmlType="submit" onClick={handleSubmit}>
+                                <FormattedMessage id="Contact.sendButton" defaultMessage="Envoyer"/>
+                            </Button>
+                        </Form.Item>
+                    </Form>
+                </Col>
+            </Row>
 
         </div>
     );
