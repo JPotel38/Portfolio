@@ -27,9 +27,10 @@
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.3",
     "react-router-sitemap": "^1.2.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "sitemap-generator": "^7.5.2",
-    "surge": "^0.21.6",
+    "surge": "^0.9.0",
+    "type-fest": "^0.21.3",
     "typewriter-effect": "^2.18.0"
   },
   "scripts": {
