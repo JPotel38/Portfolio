@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import blackboard from '../images/BlackBoard.PNG';
+import blackboard from '../images/BlackBoard.png';
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -24,7 +24,7 @@ export default function Blackboard() {
 
                 <Row>
                     <Col xs={0} sm={0} md={15}>
-                        <a href="https://blackboard-69.herokuapp.com/" target="_blank"
+                        <a href="https://blackboard-69.herokuapp.com/Blackboard.tsx" target="_blank"
                            rel="noopener noreferrer">
                             <img alt="BlackBoard" src={blackboard} width="100%"/>
                         </a>

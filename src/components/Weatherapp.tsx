@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import weatherapp from '../images/Weatherapp.PNG'
+import weatherapp from '../images/Weatherapp.png'
 
 const {Content} = Layout;
 const {Title} = Typography;

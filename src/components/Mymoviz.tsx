@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import mymoviz from '../images/Mymoviz.PNG';
+import mymoviz from '../images/Mymoviz.png';
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -22,7 +22,7 @@ export default function Mymoviz() {
                 </Row>
                 <Row>
                     <Col xs={0} sm={0} md={15}>
-                        <a href="https://mymoviz-69.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mymoviz-69.herokuapp.com/Mymoviz.tsx" target="_blank" rel="noopener noreferrer">
                             <img alt="MyMoviz" src={mymoviz} width="100%" height="350"/>
                         </a>
                     </Col>

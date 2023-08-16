@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import ticketac from '../images/Ticketac.PNG'
+import ticketac from '../images/Ticketac.png'
 
 const {Content} = Layout;
 const {Title} = Typography;

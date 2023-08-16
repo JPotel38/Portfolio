@@ -1,7 +1,5 @@
 import React from 'react'
 import {Col, Collapse, Layout, Row, Typography} from 'antd';
-import photo from '../images/photo.jpg';
-import Flash from 'react-reveal/Flash';
 import Skills from "./Skills";
 import Projets from "./Projets";
 import Pro from "./Pro";
@@ -16,13 +14,6 @@ const {Panel} = Collapse;
 export default function Home() {
     return (
         <Layout>
-            <Row>
-                <Col offset={10} xs={12} sm={12} md={4}>
-                    <Flash>
-                        <img id='picture' src={photo} alt='Jérémy Potel'/>
-                    </Flash>
-                </Col>
-            </Row>
             <Row style={{textAlign: 'center'}}>
                 <Col offset={6} span={10}>
                     <Title>

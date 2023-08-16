@@ -16,7 +16,6 @@ export default (
         <Route path="/mymoviz" />
         <Route path="/weatherapp" />
         <Route path="/bikeshop" />
-        <Route path="/pendu" />
         <Route path="/404" />
     </Route>
 );

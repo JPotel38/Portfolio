@@ -7,7 +7,7 @@ import WimgmSignup from '../images/WimgmSignup.png';
 const {Content} = Layout;
 const {Title} = Typography;
 
-export default function Pokedex() {
+export default function RPG() {
 
     return (
         <Layout>

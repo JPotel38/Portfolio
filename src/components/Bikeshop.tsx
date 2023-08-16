@@ -1,7 +1,7 @@
-import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import bikeshop from '../images/Bikeshop.PNG';
+import bikeshop from '../images/Bikeshop.png';
+import React from 'react';
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -21,7 +21,7 @@ export default function Bikeshop() {
                 </Row>
                 <Row>
                     <Col xs={0} sm={0} md={15}>
-                        <a href="https://bikeshop-69.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://bikeshop-69.herokuapp.com/Bikeshop.tsx" target="_blank" rel="noopener noreferrer">
                             <img alt="Bike Shop" src={bikeshop} width="100%"/>
                         </a>
                     </Col>

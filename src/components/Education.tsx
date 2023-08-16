@@ -6,7 +6,7 @@ const {Title} = Typography;
 
 export default function Education() {
 
-    const [details, setDetails] = useState(null)
+    const [details, setDetails] = useState(<p></p>)
     const [isModalVisible, setIsModalVisible] = useState(false);
 
     const schoolByHiit = () => {

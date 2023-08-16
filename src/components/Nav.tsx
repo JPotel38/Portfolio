@@ -7,9 +7,7 @@ const {Header} = Layout;
 
 export default function Nav() {
     return (
-        <Header
-            breakpoint="md"
-            collapsedWidth={0}>
+        <Header>
             <Menu mode="horizontal">
                 <Menu.Item key="0"><HashLink smooth to='/Portfolio'>Home</HashLink>
                 </Menu.Item>
