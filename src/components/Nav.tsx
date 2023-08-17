@@ -9,24 +9,20 @@ export default function Nav() {
     return (
         <Header>
             <Menu mode="horizontal">
-                <Menu.Item key="0"><HashLink smooth to='/Portfolio'>Home</HashLink>
+                <Menu.Item key="0"><HashLink smooth to='/'>Home</HashLink>
                 </Menu.Item>
-                <Menu.Item key="1"><HashLink smooth to='/Portfolio#education'>Education</HashLink>
+                <Menu.Item key="2"><HashLink smooth to='/projets'>Projets</HashLink>
                 </Menu.Item>
-                <Menu.Item key="2"><HashLink smooth to='/Portfolio#projets'>Projets</HashLink>
+                <Menu.Item key="3"><HashLink smooth to='/experience'>Experience</HashLink>
                 </Menu.Item>
-                <Menu.Item key="3"><HashLink smooth to='/Portfolio#pro'>Emplois</HashLink>
+                <Menu.Item key="4"><HashLink smooth to='/about'>A propos</HashLink>
                 </Menu.Item>
-                <Menu.Item key="4"><HashLink smooth to='/Portfolio#perso'>A propos</HashLink>
-                </Menu.Item>
-                <Menu.Item key="5"><HashLink smooth to='/Portfolio#contact'>Contact</HashLink>
-                </Menu.Item>
-                <Menu.Item key="6">
+                <Menu.Item key="5">
                     <GithubFilled id="github-icon">
                         <a href="https://github.com/JPotel38" target="_blank" rel="noopener noreferrer"/>
                     </GithubFilled>
                 </Menu.Item>
-                <Menu.Item key="7">
+                <Menu.Item key="6">
                     <LinkedinFilled id="linkedin-icon">
                         <a href="https://www.linkedin.com/in/jérémy-potel/" target="_blank" rel="noopener noreferrer"/>
                     </LinkedinFilled>

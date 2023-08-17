@@ -4,7 +4,7 @@ import {Col, Row, Typography} from 'antd';
 const {Title} = Typography;
 
 
-export default function Perso() {
+export default function About() {
     return (
         <div>
             <Row id='presentation'>
