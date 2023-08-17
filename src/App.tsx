@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Home from './components/Home'
@@ -23,7 +23,7 @@ export default function App() {
                 <Route path="/" exact component={Home}/>
                 <Route path="/experience" component={Experience}/>
                 <Route path="/about" component={About}/>
-                <Route path="/projets" component={Portfolio}/>
+                <Route path="/portfolio" component={Portfolio}/>
                 <Route path="/masques" component={Masques}/>
                 <Route path="/filrouge" component={FilRouge}/>
                 <Route path="/pokedex" component={Pokedex}/>

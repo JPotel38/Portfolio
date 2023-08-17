@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Button, Col, Modal, Row, Tabs, Timeline, Typography} from 'antd';
+import {Button, Col, Layout, Modal, Row, Tabs, Timeline, Typography} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 import TabPane from "antd/lib/tabs/TabPane";
 
@@ -88,7 +88,6 @@ export default function Experience() {
                     <Title level={4}>Design et responsive :</Title>
                     <ul>
                         <li><strong>Bootstrap</strong></li>
-                        <li><strong>Reactstrap</strong></li>
                         <li><strong>Ant Design</strong></li>
                     </ul>
                 </Col>
@@ -121,7 +120,7 @@ export default function Experience() {
 
     return (
         <>
-            <div id="pro">
+            <Layout>
                 <Row>
                     <Col offset={1} span={21}>
                         <Title level={2}>Expériences professionnelles</Title>
@@ -130,11 +129,24 @@ export default function Experience() {
                 <Row>
                     <Col offset={3}>
                         <Tabs defaultActiveKey="1">
-                            <TabPane tab="2020-2021" key="1">
+                            <TabPane tab="2021-2023" key="1">
                                 <Row>
                                     <Col>
-                                        <p>Novembre 2020 - Août 2021</p>
-                                        <p>Alternant développeur full-stack Java/ Angular chez Energy Pool - Lyon</p>
+                                        <Title level={2}>Développeur chez Nakama</Title>
+                                        <Title level={3}>Intégrateur Web - Énergie Demain - avril/ mai 2023.</Title>
+                                        <p>Réalisation d'une nouvelle application permettant aux utilisateurs de suivre les travaux de rénovations de leur bâtiment.
+                                        Création de composants réutilisables et modulables en Angular, basés sur des maquettes Figma.
+                                            Angular 15. GitLab. StorybookJS.</p>
+                                        <Title level={3}>Business analyst/ scrum master/ testeur - novembre 2022 - mars 2023</Title>
+                                        <p>Chargé de la migration d'anciens écrans en AngularJS/ Play Framework en
+                                            Angular 9 </p>
+                                        <ul>
+                                            <li>Respect du métier.</li>
+                                            <li>Intégration normes graphiques Energy Pool</li>
+                                            <li>Test unitaires (Jasmine)</li>
+                                            <li>Réecriture de controller Java en Kotlin</li>
+                                        </ul>
+                                        <Title level={3}>Développeur Angular - novembre 2021 - août 2022</Title>
                                         <p>Chargé de la migration d'anciens écrans en AngularJS/ Play Framework en
                                             Angular 9 </p>
                                         <ul>
@@ -146,12 +158,27 @@ export default function Experience() {
                                     </Col>
                                 </Row>
                             </TabPane>
-                            <TabPane tab="2019" key="2">
+                            <TabPane tab="2020-2021" key="2">
                                 <Row>
                                     <Col>
-                                        <p>Avril - Septembre</p>
-                                        <p>Ingénieur Etudes et Développement à Adaming Conseil - Lyon.</p>
-                                        <p>Prestataire externe Adaming Conseil pour Sopra Steria Limonest.
+                                        <Title level={2}>Alternant développeur full-stack Java/ Angular chez Energy Pool - Lyon</Title>
+                                        <p>Novembre 2020 - Août 2021</p>
+                                        <p>Chargé de la migration d'anciens écrans en AngularJS/ Play Framework en
+                                            Angular 9 </p>
+                                        <ul>
+                                            <li>Intégration des normes graphiques Energy Pool</li>
+                                            <li>Test unitaires</li>
+                                            <li>Réecriture de controller Java en Kotlin</li>
+                                        </ul>
+                                    </Col>
+                                </Row>
+                            </TabPane>
+                            <TabPane tab="2019" key="3">
+                                <Row>
+                                    <Col>
+                                        <Title level={2}>Ingénieur Etudes et Développement à Adaming Conseil - Lyon.</Title>
+                                        <p>Avril 2019 - septembre 2019</p>
+                                        <p>Prestataire externe Adaming Conseil pour Sopra Steria.
                                             Département monétique pour le compte du Crédit Agricole</p>
                                         <ul>
                                             <li>Développement COBOL/ Pacbase.</li>
@@ -164,7 +191,7 @@ export default function Experience() {
                                     </Col>
                                 </Row>
                             </TabPane>
-                            <TabPane tab="2018" key="3">
+                            <TabPane tab="2018" key="4">
                                 <Row>
                                     <Col>
                                         <p>Mars - Septembre</p>
@@ -186,8 +213,6 @@ export default function Experience() {
                         </Tabs>
                     </Col>
                 </Row>
-            </div>
-            <div id="education">
                 <Row>
                     <Col offset={1} span={21}>
                         <Title level={2}>Education</Title>
@@ -207,20 +232,14 @@ export default function Experience() {
                         <Timeline.Item label="2017"><p>Master 2 Relations Internationales spécialité
                             Francophonie et Développement Durable - Lyon 3.</p><Button
                             style={{marginLeft: 5}} onClick={master2}><SearchOutlined/></Button></Timeline.Item>
-                        <Timeline.Item label="2014"><p>Master 1 Histoire Moderne et Contemporaine - Lyon
-                            2.</p></Timeline.Item>
                     </Timeline>
                     <Modal visible={isModalVisible}
                            onCancel={() => setIsModalVisible(false)}
-                           footer={[
-                               <Button key="back" onClick={() => setIsModalVisible(false)}>
-                                   Retour
-                               </Button>
-                           ]}>
+                           footer={[]}>
                         {details}
                     </Modal>
                 </Row>
-            </div>
+            </Layout>
         </>
     )
 }

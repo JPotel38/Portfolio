@@ -1,12 +1,12 @@
 import React from 'react'
-import {Col, Row, Typography} from 'antd';
+import {Col, Layout, Row, Typography} from 'antd';
 
 const {Title} = Typography;
 
 
 export default function About() {
     return (
-        <div>
+        <Layout>
             <Row id='presentation'>
                 <Col span={16} offset={4}>
                     <p>Gravitant dans l'univers du développement informatique depuis 2019 à
@@ -71,6 +71,6 @@ export default function About() {
                         toujours au quotidien.</p>
                 </Col>
             </Row>
-        </div>
+        </Layout>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import {Col, Layout, Row, Typography} from 'antd';
 import {GithubFilled} from '@ant-design/icons';
-import pokemon from '../images/Pokemon.png';
 
 const {Content} = Layout;
 const {Title} = Typography;
@@ -21,9 +20,6 @@ export default function Pokedex() {
                     </Col>
                 </Row>
                 <Row>
-                <Col xs={0} sm={0} md={14}>
-                    <img alt="Pokedex" src={pokemon} width="100%" height="350"/>
-                </Col>
                     <Col offset={2} xs={22} sm={22} md={7}>
                         <p>Projet front-end Angular pour pratiquer tout les principes fondamentaux du framework :
                         resolvers, services, guards, interceptors, pipes, tests etc...</p>

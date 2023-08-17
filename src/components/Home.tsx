@@ -8,7 +8,7 @@ const {Title} = Typography;
 export default function Home() {
     return (
         <Layout>
-            <Row style={{textAlign: 'center'}}>
+            <Row>
                 <Col offset={6} span={10}>
                     <Title>
                         <Typewriter
@@ -23,7 +23,7 @@ export default function Home() {
                     </Title>
                 </Col>
             </Row>
-            <Row style={{textAlign: 'center'}}>
+            <Row>
                 <Col offset={4} span={14}>
                     <Title level={2}>
                         <Typewriter

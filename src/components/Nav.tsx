@@ -11,7 +11,7 @@ export default function Nav() {
             <Menu mode="horizontal">
                 <Menu.Item key="0"><HashLink smooth to='/'>Home</HashLink>
                 </Menu.Item>
-                <Menu.Item key="2"><HashLink smooth to='/projets'>Projets</HashLink>
+                <Menu.Item key="2"><HashLink smooth to='/portfolio'>Portfolio</HashLink>
                 </Menu.Item>
                 <Menu.Item key="3"><HashLink smooth to='/experience'>Experience</HashLink>
                 </Menu.Item>
