@@ -1,16 +1,14 @@
 import React from 'react'
-import {Col, Layout, Row, Typography} from 'antd';
 import Typewriter from "typewriter-effect";
 import Contact from "./Contact";
-
-const {Title} = Typography;
+import {Col, Container, Row} from "react-bootstrap";
 
 export default function Home() {
     return (
-        <Layout>
+        <Container>
             <Row>
                 <Col offset={6} span={10}>
-                    <Title>
+                    <h1>
                         <Typewriter
                             options={{
                                 cursor: ' '
@@ -20,12 +18,12 @@ export default function Home() {
                                     .start()
                             }}
                         />
-                    </Title>
+                    </h1>
                 </Col>
             </Row>
             <Row>
                 <Col offset={4} span={14}>
-                    <Title level={2}>
+                    <h2>
                         <Typewriter
                             options={{
                                 cursor: ' '
@@ -36,10 +34,10 @@ export default function Home() {
                                     .start();
                             }}
                         />
-                    </Title>
+                    </h2>
                 </Col>
             </Row>
             <Contact/>
-        </Layout>
+        </Container>
     )
 }

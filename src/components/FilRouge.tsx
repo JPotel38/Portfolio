@@ -1,24 +1,19 @@
 import React from 'react'
-import {Col, Layout, Row, Typography} from 'antd';
-import {GithubFilled} from '@ant-design/icons';
 import SchoolByHiit from '../images/SchoolByHiit.png'
-
-const {Content} = Layout;
-const {Title} = Typography;
+import {Col, Container, Row} from "react-bootstrap";
 
 export default function FilRouge() {
 
     return (
-        <Layout>
-            <Content style={{margin: '24px 16px 0'}}>
+        <Container>
                 <Row>
                     <Col span={12}>
-                        <Title>Projet final School By Hi!t</Title>
+                        <h1>Projet final School By Hi!t</h1>
                     </Col>
                     <Col span={3} offset={3}>
                         <a href="https://github.com/JPotel38/final-project-school-by-hiit" target="_blank"
                            rel="noopener noreferrer" style={{color: '#92D050', fontSize: "50px"}}>
-                            <GithubFilled/></a>
+                            </a>
                     </Col>
                 </Row>
                 <Row>
@@ -32,7 +27,6 @@ export default function FilRouge() {
                         MySQL.</p>
                     </Col>
                 </Row>
-            </Content>
-        </Layout>
+        </Container>
     )
 }

@@ -1,18 +1,15 @@
 import React from 'react'
-import {Col, Layout, Row, Typography} from 'antd';
-
-const {Content} = Layout;
-const {Title} = Typography;
+import {Col, Container, Row} from "react-bootstrap";
 
 export default function NotFound() {
 
     return (
-        <Content>
+        <Container>
             <Row>
                 <Col span={24}>
-                    <Title>Not found :(</Title>
+                    <h1>Not found :(</h1>
                 </Col>
             </Row>
-        </Content>
+        </Container>
     )
 }

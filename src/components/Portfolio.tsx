@@ -3,16 +3,16 @@ import FilRouge from "./FilRouge";
 import Pokedex from "./Pokedex";
 import Masques from "./Masques";
 import RPG from "./RPG";
-import {Layout} from "antd";
+import {Container} from "react-bootstrap";
 
 export default function Portfolio() {
 
     return (
-        <Layout>
+        <Container>
             <Pokedex/>
             <RPG/>
             <Masques/>
             <FilRouge/>
-        </Layout>
+        </Container>
     )
 }

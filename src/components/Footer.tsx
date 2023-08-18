@@ -1,13 +1,13 @@
-import {Col, Layout, Row} from 'antd';
-import {GithubFilled, LinkedinFilled} from "@ant-design/icons";
 import React from "react";
-
-const { Footer} = Layout;
+import {Col, Container, Row} from "react-bootstrap";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons/faLinkedin";
 
 export default function MyFooter() {
 
     return (
-        <Footer id='footer'>
+        <Container>
             <Row>
                 <Col span={4}>
                     <address>
@@ -18,14 +18,15 @@ export default function MyFooter() {
                     <p>+33782736832</p>
                 </Col>
                 <Col span={12}>
-                <GithubFilled id="github-icon"/>
-                <a href="https://github.com/JPotel38" target="_blank" rel="noopener noreferrer">Github</a>
-                <LinkedinFilled id="linkedin-icon"/>
-                <a href="https://www.linkedin.com/in/jérémy-potel/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn</a>
+                    <a href="https://github.com/JPotel38" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jérémy-potel/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin}/>
+                    </a>
                 </Col>
             </Row>
-        </Footer>
+        </Container>
     )
 }
 

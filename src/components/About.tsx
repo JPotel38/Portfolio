@@ -1,12 +1,9 @@
 import React from 'react'
-import {Col, Layout, Row, Typography} from 'antd';
-
-const {Title} = Typography;
-
+import {Col, Container, Row} from "react-bootstrap";
 
 export default function About() {
     return (
-        <Layout>
+        <Container>
             <Row id='presentation'>
                 <Col span={16} offset={4}>
                     <p>Gravitant dans l'univers du développement informatique depuis 2019 à
@@ -24,12 +21,12 @@ export default function About() {
             </Row>
             <Row>
                 <Col offset={1} span={21}>
-                    <Title>Projets personnels</Title>
+                    <h1>Projets personnels</h1>
                 </Col>
             </Row>
             <Row>
                 <Col offset={1}>
-                    <Title level={2}>KultureMania</Title>
+                    <h2>KultureMania</h2>
                     <p><a href="https://kulturemania.blog/">KultureMania</a> est une webzine que j'ai créée
                         en 2017.
                         Je rédige des articles et des dossiers sur les items de la culture contemporaine :
@@ -43,7 +40,7 @@ export default function About() {
             </Row>
             <Row>
                 <Col offset={1}>
-                    <Title level={2}>Futuréel Festival</Title>
+                    <h2>Futuréel Festival</h2>
                     <p> Le <a href="https://www.facebook.com/futureelfestival/">Futuréel Festival</a> est un
                         festival de musique que nous avons imaginé et mis en place en juillet 2017.
                         Etant alors un des cofondateurs, j'ai pris en charge la communication, l'administratif,
@@ -53,7 +50,7 @@ export default function About() {
 
             <Row>
                 <Col offset={1}>
-                    <Title level={2}>Service civique à l'AFEV</Title>
+                    <h2>Service civique à l'AFEV</h2>
                     <p> En 2016, j'ai effectué un service civique auprès de l'AFEV en tant que "Ambassadeur
                         du Livre" dans une école de Lyon 5ème.
                         Il s'agissait de donner le goût de la lecture aux enfants qui n'avaient forcément la
@@ -63,7 +60,7 @@ export default function About() {
 
             <Row>
                 <Col offset={1}>
-                    <Title level={2}>Programme Vacances Travail en Nouvelle-Zélande</Title>
+                    <h2>Programme Vacances Travail en Nouvelle-Zélande</h2>
                     <p>En 2014-2015, j'ai effectué une année de césure en Nouvelle-Zélande dans le cadre du
                         Programme Vacances Travail.
                         Cette expérience a participé à mon ouverture d'esprit et à une plus grande maturité.
@@ -71,6 +68,6 @@ export default function About() {
                         toujours au quotidien.</p>
                 </Col>
             </Row>
-        </Layout>
+        </Container>
     )
 }
