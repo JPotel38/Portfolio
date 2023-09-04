@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.scss';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
 import Home from './components/Home'
 import Nav from "./components/Nav";
 import Experience from "./components/Experience";

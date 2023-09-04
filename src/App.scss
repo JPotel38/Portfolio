@@ -4,35 +4,28 @@
   --red: #de004e;
   --dark-red: #860029;
   --purple: #7a04eb;
-  --blue: #00b3fe;
+  --light-blue: #00b3fe;
   --yellow: #defe47;
   --dark-blue: #321450;
   --pink: #ff00a0;
   --light-pink: #f887ff;
   --black: #000000;
   --white: #FFFFFF;
-  --light-green: #d1f7ff;
+  --light-green: #a1ef8b;
   --dark-green: #005678;
-  --text-shadow: rgb(0, 208, 255);
-}
-
-a {
-  font-weight: bold;
 }
 
 @mixin common-heading-styles {
-  color: var(--purple);
   text-align: center;
   margin: 40px 0;
 }
 
-h1 {
-  @include common-heading-styles;
+a {
+  color: var(--purple);
+  text-decoration: none;
 }
 
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   @include common-heading-styles;
 }
 
