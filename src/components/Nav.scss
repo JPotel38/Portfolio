@@ -1,0 +1,14 @@
+.navbar {
+  border-bottom: 1px solid var(--light-green);
+}
+
+.navbar > .container {
+  justify-content: end;
+}
+
+.navbar-brand {
+font-weight: lighter}
+
+.navbar-brand:hover {
+  color: var(--purple)
+}
