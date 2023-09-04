@@ -11,7 +11,8 @@ export default function Home() {
                     <h1>
                         <Typewriter
                             options={{
-                                cursor: ' '
+                                cursor: ' ',
+                                delay: 50
                             }}
                             onInit={(typewriter) => {
                                 typewriter.typeString('Salut, je suis Jérémy Potel !')
@@ -26,10 +27,11 @@ export default function Home() {
                     <h2>
                         <Typewriter
                             options={{
-                                cursor: ' '
+                                cursor: ' ',
+                                delay: 50
                             }}
                             onInit={(typewriter) => {
-                                typewriter.pauseFor(3500)
+                                typewriter.pauseFor(2000)
                                     .typeString('Développeur front-end')
                                     .start();
                             }}
